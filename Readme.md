@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Eugene Chepkasov](https://up.htmlacademy.ru/adaptive-individual/1/user/2306205).
-* Наставник: `Неизвестно`.
+* Наставник: [Светлана Корякина](https://htmlacademy.ru/profile/id477401).
 
 ---
 
