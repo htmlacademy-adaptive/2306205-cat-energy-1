@@ -1,0 +1,26 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  background: url("../img/image-index-background-mob.jpg") no-repeat top center;
+}
+
+
+.hero__heading {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 27px;
+}
+
+.hero__lead {
+  color: #ffffff;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 25px;
+}

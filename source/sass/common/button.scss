@@ -1,0 +1,17 @@
+.button {
+  display: block;
+  color: #ffffff;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 7px 44px;
+  background-color: $basic-green;
+
+  &--primary {
+    width: 100%;
+  }
+}

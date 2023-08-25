@@ -1,0 +1,28 @@
+.footer {
+}
+
+.footer__map {
+  background-color: $basic-grey;
+}
+
+.footer__background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $basic-grey;
+}
+
+.footer__logo {
+  margin: 40px 0 20px 0;
+}
+
+.footer__developed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 40px 0;
+}
+
+.footer__developed-text {
+  margin: 0;
+}

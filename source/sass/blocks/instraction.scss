@@ -1,0 +1,34 @@
+.instraction {
+  padding: 0 20px;
+}
+
+.instraction__title {
+  margin-bottom: 40px
+}
+
+.instraction__list {
+  @include list-reset;
+  margin-left: 80px;
+}
+
+.instraction__item {
+  position: relative;
+}
+
+.instraction__item:last-child {
+  margin-bottom: 53px;
+}
+
+.instraction__item-text {
+  margin: 0 0 24px 0;
+}
+
+.instraction__item--leaf::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: $basic-green url("../../img/icon-leaf.svg") no-repeat center center;
+  top: -3px;
+  left: -80px;
+}

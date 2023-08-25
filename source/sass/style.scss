@@ -1,1 +1,23 @@
-// Начните писать стили здесь
+// Переменные и миксины
+@import "variables.scss";
+@import "mixins.scss";
+
+// Общие стили
+@import "common/fonts.scss";
+@import "common/visually-hidden.scss";
+@import "common/global.scss";
+@import "common/body-page.scss";
+@import "common/button.scss";
+@import "common/main-title.scss";
+
+// Блоки сайта
+@import "blocks/header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/hero.scss";
+@import "blocks/all-programs.scss";
+@import "blocks/program.scss";
+@import "blocks/instraction.scss";
+@import "blocks/footer.scss";
+@import "blocks/example.scss";
+@import "blocks/welcome.scss";
+@import "blocks/socials.scss";
