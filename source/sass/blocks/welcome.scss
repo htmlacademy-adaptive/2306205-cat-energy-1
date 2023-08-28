@@ -1,21 +1,18 @@
 .welcome {
   display: flex;
-  padding: 26px 20px;
   background-color: #ffffff;
 }
 
 .welcome__dillers {
   max-width: 140px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $title-font;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
 }
 
 .welcome__address {
-  font: inherit;
+  font-style: normal;
   line-height: 20px;
 }

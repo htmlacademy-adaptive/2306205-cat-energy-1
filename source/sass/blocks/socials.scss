@@ -1,17 +1,10 @@
-.socials {
-  padding: 22px 0;
-}
-
 .socials__list {
   @include list-reset;
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 
 .socials__link {
   display: flex;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
 }

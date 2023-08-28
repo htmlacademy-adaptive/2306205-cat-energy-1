@@ -1,25 +1,22 @@
 .program {
-  background-color: $basic-grey;
+  background-color: $bg-color;
   padding: 30px 33px 18px 20px;
 }
 
 .program__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $title-font;
   font-size: 24px;
   line-height: 37px;
-  font-style: normal;
-  font-weight: 400;
   margin: 0;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .program__link {
   color: #000000;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $title-font;
   font-size: 16px;
   line-height: 24px;
-  font-style: normal;
-  font-weight: 400;
   margin: 0;
   text-transform: uppercase;
 }

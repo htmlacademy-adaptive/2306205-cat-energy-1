@@ -1,0 +1,53 @@
+.selection {
+  padding: 0 20px;
+}
+
+.selection__title {
+  margin-top: 27px;
+}
+
+.selection__lead {
+  font-family: $title-font;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 37px;
+  margin-bottom: 4px;
+}
+
+.selection__field-group {
+  border: none;
+  padding: 0;
+}
+
+.selection__list {
+  @include list-reset;
+  margin-top: 35px;
+}
+
+.selection__item {
+  margin-bottom: 14px;
+}
+
+.field__lable {
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $form-color;
+}
+
+.field__input {
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 14px 0 13px 0;
+  color: $form-color;
+}
+
+.selection__button {
+  width: 100%;
+  max-width: 320px;
+  margin: auto;
+}

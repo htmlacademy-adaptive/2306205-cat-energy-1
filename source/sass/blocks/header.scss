@@ -1,6 +1,5 @@
 .header {
   padding: 13px 20px 14px;
-  position: relative;
 }
 
 .header__wrap {
@@ -11,4 +10,13 @@
 .header__logo {
   display: block;
   margin: auto 0;
+}
+
+.header__menu {
+  display: none;
+  position: absolute;
+  top: 65px;
+  right: 0;
+  width: 100%;
+  background-color: #ffffff;
 }

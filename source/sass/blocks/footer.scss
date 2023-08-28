@@ -1,28 +1,27 @@
-.footer {
+.footer__address {
+  margin: 26px 20px;
 }
 
 .footer__map {
-  background-color: $basic-grey;
+  background-color: $bg-color;
 }
 
 .footer__background {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $basic-grey;
+  background-color: $bg-color;
 }
 
 .footer__logo {
   margin: 40px 0 20px 0;
 }
 
-.footer__developed {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0 40px 0;
+.footer__socials {
+  margin: 22px 0 22px 0;
 }
 
-.footer__developed-text {
-  margin: 0;
+.footer__developed {
+  margin: 20px 20px 40px 20px;
+  padding: 0 20px;
 }
