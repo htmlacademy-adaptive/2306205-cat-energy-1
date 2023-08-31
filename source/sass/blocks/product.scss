@@ -40,26 +40,26 @@
 .product__plus {
   padding: 14px 0;
   margin-bottom: 23px;
-}
 
-.product__plus::before {
-  position: relative;
-  display: block;
-  content: "";
-  width: 30px;
-  height: 2px;
-  background-color: #d3d3d3;
-  top: 2px;
-}
+  &::before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    top: 2px;
+  }
 
-.product__plus::after {
-  position: relative;
-  display: block;
-  content: "";
-  width: 30px;
-  height: 2px;
-  background-color: #d3d3d3;
-  transform: rotate(90deg);
+  &::after {
+    position: relative;
+    display: block;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    transform: rotate(90deg);
+  }
 }
 
 .product__text {
