@@ -7,7 +7,7 @@
 }
 
 .selection__lead {
-  font-family: $title-font;
+  font-family: $accent-font;
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
@@ -29,22 +29,6 @@
   margin-bottom: 14px;
 }
 
-.field__lable {
-  font-family: $title-font;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $form-color;
-}
-
-.field__input {
-  font-family: $title-font;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  padding: 14px 0 13px 0;
-  color: $form-color;
-}
 
 .selection__button {
   width: 100%;

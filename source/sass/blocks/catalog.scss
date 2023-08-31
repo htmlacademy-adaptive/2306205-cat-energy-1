@@ -9,8 +9,10 @@
 
 .catalog__item {
   margin-bottom: 45px;
+
+  &--add {
+    margin-bottom: 32px;
+  }
 }
 
-.catalog__item--add {
-  margin-bottom: 32px;
-}
+
