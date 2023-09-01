@@ -1,0 +1,10 @@
+.socials__list {
+  @include list-reset;
+  display: flex;
+  gap: 24px;
+}
+
+
+.socials__link {
+  display: flex;
+}

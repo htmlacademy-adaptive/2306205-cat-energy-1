@@ -1,0 +1,58 @@
+.instraction {
+  padding: 0 20px;
+}
+
+.instraction__title {
+  margin-bottom: 40px;
+}
+
+.instraction__list {
+  @include list-reset;
+}
+
+.instraction__item {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.instraction__item-text {
+  margin: 0;
+  padding-top: 3px;
+}
+
+.instraction__item:last-child {
+  margin-bottom: 53px;
+}
+
+.instraction__item--leaf::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: $primary-color url("../img/icon-leaf.svg") no-repeat center center;
+  flex-shrink: 0;
+}
+
+.instraction__item--water::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: $primary-color url("../img/icon-water.svg") no-repeat center center;
+  flex-shrink: 0;
+}
+
+.instraction__item--meal::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: $primary-color url("../img/icon-meal.svg") no-repeat center center;
+  flex-shrink: 0;
+}
+
+.instraction__item--time::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: $primary-color url("../img/icon-time.svg") no-repeat center center;
+  flex-shrink: 0;
+}

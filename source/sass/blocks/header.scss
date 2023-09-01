@@ -1,0 +1,42 @@
+.header {
+  padding: 13px 20px 14px;
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: block;
+  margin: auto 0;
+}
+
+.header__menu {
+  display: none;
+  position: absolute;
+  top: 65px;
+  right: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.header__button {
+  position: relative;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header__button::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/button-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 25px;
+  height: 18px;
+  top: 0;
+  right: 0;
+}

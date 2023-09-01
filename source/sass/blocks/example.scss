@@ -1,0 +1,45 @@
+.example {
+  padding: 0 20px;
+  background-color: $bg-color;
+}
+
+.example__title {
+  padding-top: 25px;
+  margin-bottom: 40px;
+}
+
+.example__text {
+  margin: 0;
+}
+
+.example__results {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__results-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.example__results-value {
+  background-color: $bg-color;
+}
+
+.example__results-index {
+  font-family: $accent-font;
+  font-size: 20px;
+  line-height: 24px;
+  margin: auto;
+  order: -1;
+}
+
+.example__cost {
+  font-family: $accent-font;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}

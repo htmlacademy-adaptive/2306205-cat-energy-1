@@ -1,0 +1,29 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  background-image:
+    url("../img/image-background-mob.jpg"),
+    linear-gradient(#63a63a 0 302px, rgba(104, 183, 56, 0) 302px 100%);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.hero__heading {
+  color: #ffffff;
+  margin-top: 27px;
+}
+
+.hero__lead {
+  color: #ffffff;
+  font-family: $accent-font;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+
+.hero__button {
+  width: 100%;
+  max-width: 320px;
+}

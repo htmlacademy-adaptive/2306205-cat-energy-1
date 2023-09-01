@@ -1,0 +1,17 @@
+.button {
+  display: block;
+  color: #ffffff;
+  font-family: $accent-font;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 7px 44px;
+  background-color: $primary-color;
+
+  &--more {
+    color: $form-color;
+    background-color: $bg-color;
+    border: none;
+  }
+}
