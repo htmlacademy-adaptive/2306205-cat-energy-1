@@ -1,5 +1,9 @@
 .footer__address {
   margin: 26px 20px;
+
+  @media (min-width: $desktop-width) {
+    margin: 95px 110px;
+  }
 }
 
 .footer__map {

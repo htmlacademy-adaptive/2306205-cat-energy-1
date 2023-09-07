@@ -1,18 +1,56 @@
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 20px;
   background-image:
     url("../img/image-background-mob.jpg"),
     linear-gradient(#63a63a 0 302px, rgba(104, 183, 56, 0) 302px 100%);
   background-repeat: no-repeat;
   background-position: top center;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
+}
+
+.hero__wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    align-items: start;
+    margin-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    margin-bottom: 82px;
+    margin-left: 80px;
+  }
+}
+
+
+.hero__text {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+    align-items: start;
+  }
 }
 
 .hero__heading {
   color: #ffffff;
   margin-top: 27px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    text-align: left;
+    margin-top: 57px;
+  }
 }
 
 .hero__lead {
@@ -21,9 +59,54 @@
   line-height: 14px;
   text-transform: uppercase;
   margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    text-align: left;
+    margin-top: 40px;
+  }
+}
+
+.hero__img {
+  @media (min-width: $tablet-width) {
+    align-self: center;
+  }
+
+  // Задал размеры временно, пока не поставлю реальную картинку
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    margin-bottom: 114px;
+  }
+}
+
+
+.hero__img::before {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 694px;
+    top: -70px;
+    left: 650px;
+
+    background-image: url("../img/image-background-desktop.jpg");
+
+    background-repeat: no-repeat;
+    background-position: left center;
+    z-index: -10;
+  }
 }
 
 .hero__button {
   width: 100%;
   max-width: 320px;
+
+  @media (min-width: $tablet-width),
+    (min-width: $desktop-width) {
+    position: absolute;
+    width: auto;
+    top: 300px;
+    left: 30px;
+  }
 }

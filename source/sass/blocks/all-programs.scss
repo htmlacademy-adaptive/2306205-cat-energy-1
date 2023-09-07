@@ -1,7 +1,22 @@
 .all-programs {
-  padding: 0 20px;
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin: 0 80px;
+  }
 }
 
 .all-programs__program {
   margin: 20px 0;
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+  }
 }

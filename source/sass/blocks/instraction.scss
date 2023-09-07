@@ -1,5 +1,13 @@
-.instraction {
-  padding: 0 20px;
+.instration__wrap {
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+  }
 }
 
 .instraction__title {
@@ -8,12 +16,32 @@
 
 .instraction__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template: 250px 250px / 280px 280px;
+    justify-content: space-between;
+    row-gap: 37px;
+    column-gap: 137px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 0;
+  }
 }
 
 .instraction__item {
   display: flex;
   gap: 20px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    max-width: 230px;
+    margin-bottom: 0;
+  }
 }
 
 .instraction__item-text {
@@ -23,6 +51,11 @@
 
 .instraction__item:last-child {
   margin-bottom: 53px;
+
+  @media (min-width: $desktop-width),
+    (min-width: $tablet-width) {
+    margin-bottom: 53px;
+  }
 }
 
 .instraction__item--leaf::before {
