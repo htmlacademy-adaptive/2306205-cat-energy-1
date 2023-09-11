@@ -19,7 +19,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template: 250px 250px / 280px 280px;
+    grid-template-columns: 280px 280px;
     justify-content: space-between;
     row-gap: 37px;
     column-gap: 137px;
@@ -52,8 +52,7 @@
 .instraction__item:last-child {
   margin-bottom: 53px;
 
-  @media (min-width: $desktop-width),
-    (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 53px;
   }
 }

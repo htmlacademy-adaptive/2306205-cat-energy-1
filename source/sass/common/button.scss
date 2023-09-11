@@ -7,12 +7,12 @@
   text-transform: uppercase;
   text-align: center;
   padding: 11px 28px;
+  border: none;
   background-color: $primary-color;
 
   &--more {
     color: $form-color;
     background-color: $bg-color;
-    border: none;
   }
 
   @media (min-width: $tablet-width), (min-width: $desktop-width) {
