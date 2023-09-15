@@ -1,9 +1,15 @@
 .selection {
-  padding: 0 20px;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding: 0 40px;
+  }
 }
 
-.selection__title {
-  margin-top: 27px;
+.selection__columns {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .selection__lead {
@@ -18,6 +24,16 @@
 .selection__field-group {
   border: none;
   padding: 0;
+  margin: 0;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .selection__list {
@@ -29,9 +45,28 @@
   margin-bottom: 14px;
 }
 
+.selection__send {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  margin-bottom: 32px;
 
-.selection__button {
-  width: 100%;
-  max-width: 320px;
-  margin: auto;
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
+}
+
+.selection__note {
+  margin-top: 21px;
+  margin-bottom: 0;
+
+  @media (max-width: $tablet-width) {
+    text-align: center;
+  }
 }

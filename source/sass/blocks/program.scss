@@ -60,7 +60,7 @@
   background-color: $primary-color;
   top: 24px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: 200px;
     height: 200px;
     top: 93px;
@@ -71,5 +71,6 @@
     width: 100px;
     height: 100px;
     top: 47px;
+    left: 30px;
   }
 }
