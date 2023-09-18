@@ -1,0 +1,67 @@
+.additions {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 280px auto 244px;
+    align-content: center;
+    gap: 40px;
+  }
+}
+
+.additions__title {
+  font-family: $accent-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $card-title-color;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.additions__description {
+  width: 100%;
+  margin: 10px 0 15px 0;
+  font-size: 14px;
+  line-height: 100%;
+}
+
+.additions__description-term {
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.additions__description-data {
+  text-align: right;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 91px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 42px;
+    text-align: left;
+  }
+}
+
+.additions__button {
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    grid-column: 1/3;
+  }
+}

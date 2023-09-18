@@ -3,13 +3,14 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="body-page">
   <header class="header">
-    <div class="header__wrap">
+    <div class="header__wrap container">
       <a class="header__logo" href="index.html" aria-label="Перейти на главную страницу">
         <img class="logo__img" src="img/logo-img-mobile.svg" width="33" height="37" alt="Иконка логотипа Кэт энерджи">
       </a>
@@ -39,15 +40,19 @@
 
   <main>
     <section class="hero">
-      <h1 class="hero__heading main-title">
-        Функциональное<br> питание для котов</h1>
-      <p class="hero__lead">Занялся собой? Займись котом!</p>
-      <img class="hero__img" src="img/image-hero.png" width="280" height="270" alt="Банка Кэт энерджи">
-      <a class="hero__button button" href="#">Подобрать программу</a>
+      <div class="hero__wrap">
+        <div class="hero__text">
+          <h1 class="hero__heading main-title">
+            Функциональное<br> питание для котов</h1>
+          <p class="hero__lead">Занялся собой? Займись котом!</p>
+        </div>
+        <img class="hero__img" src="img/image-hero.png" width="280" height="270" alt="Банка Кэт энерджи">
+        <a class="hero__button button" href="#">Подобрать программу</a>
+      </div>
     </section>
 
 
-    <section class="all-programs">
+    <section class="all-programs container">
       <h2 class="visually-hidden">Программы питания</h2>
       <article class="all-programs__program program">
         <h3 class="program__title">Похудение</h3>
@@ -69,41 +74,49 @@
     </section>
 
     <section class="instraction">
-      <h2 class="instraction__title main-title">Как это работает</h2>
-      <ul class="instraction__list">
-        <li class="instraction__item instraction__item--leaf">
-          <p class="instraction__item-text">Функциональное питание содержит только полезные питательные вещества.</p>
-        </li>
-        <li class="instraction__item instraction__item--water">
-          <p class="instraction__item-text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-          </p>
-        </li>
-        <li class="instraction__item instraction__item--meal">
-          <p class="instraction__item-text">Замените один-два приема обычной еды на наше функциональное питание.</p>
-        </li>
-        <li class="instraction__item instraction__item--time">
-          <p class="instraction__item-text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-        </li>
-      </ul>
+      <div class="instration__wrap container">
+        <h2 class="instraction__title main-title">Как это работает</h2>
+        <ul class="instraction__list">
+          <li class="instraction__item instraction__item--leaf">
+            <p class="instraction__item-text">Функциональное питание содержит только полезные питательные вещества.</p>
+          </li>
+          <li class="instraction__item instraction__item--water">
+            <p class="instraction__item-text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+            </p>
+          </li>
+          <li class="instraction__item instraction__item--meal">
+            <p class="instraction__item-text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          </li>
+          <li class="instraction__item instraction__item--time">
+            <p class="instraction__item-text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="example">
-      <h2 class="example__title main-title">Живой пример</h2>
-      <p class="example__text">
-        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-        изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-      </p>
-      <dl class="example__results">
-        <div class="example__results-wrap">
-          <dt class="example__results-value">снижение<br>веса</dt>
-          <dd class="example__results-index">5 кг</dd>
+      <div class="example__wrap">
+        <h2 class="example__title main-title">Живой пример</h2>
+        <p class="example__text">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+
+        <div class="example__numbers">
+          <dl class="example__results">
+            <div class="example__results-wrap">
+              <dt class="example__results-value">снижение<br>веса</dt>
+              <dd class="example__results-index">5 кг</dd>
+            </div>
+            <div class="example__results-wrap">
+              <dt class="example__results-value">затрачено<br>времени</dt>
+              <dd class="example__results-index">60 дней</dd>
+            </div>
+          </dl>
+          <p class="example__cost">Затраты на питание: 15 000 руб.</p>
         </div>
-        <div class="example__results-wrap">
-          <dt class="example__results-value">затрачено<br>времени</dt>
-          <dd class="example__results-index">60 дней</dd>
-        </div>
-      </dl>
-      <p class="example__cost">Затраты на питание: 15 000 руб.</p>
+      </div>
+
       <div class="example__slider slider">
         <img class="slider__img" src="img/image-slider-before-mobile.png" alt="Фото кота до" width="280" height="256">
         <img class="slider__img" src="img/image-slider-after-mobile.png" alt="Фото кота после" width="280" height="256">
@@ -111,21 +124,26 @@
       </div>
     </section>
 
-    <footer class="footer">
-      <h2 class="visually-hidden">Наши контакты</h2>
+  </main>
 
-      <div class="footer__address welcome">
-        <h3 class="visually-hidden">Наш адрес</h3>
-        <p class="welcome__dillers">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="welcome__address">ул. Большая <br>Конюшенная, д. 19/8 <br>Санкт-Петербург</address>
-      </div>
+  <footer class="footer">
+    <h2 class="visually-hidden">Наши контакты</h2>
 
-      <div class="footer__map">
-        <h3 class="visually-hidden">Офис на карте</h3>
-        <img class="map-location" src="img/image-location-mobile.jpg" alt="Наш адрес на карте" width="320" height="362">
-      </div>
+    <div class="footer__address welcome container">
+      <h3 class="visually-hidden">Наш адрес</h3>
+      <p class="welcome__dillers">Приглашаем к сотрудничеству дилеров!</p>
+      <address class="welcome__address">ул. Большая <br>Конюшенная, д. 19/8 <p>Санкт-Петербург</p>
+      </address>
+    </div>
 
-      <div class="footer__background">
+    <div class="footer__map">
+      <h3 class="visually-hidden">Офис на карте</h3>
+      <img class="map-location" src="img/image-location-mobile.jpg" alt="Наш адрес на карте" width="320" height="362">
+    </div>
+
+    <div class="footer__wrap">
+
+      <section class="footer__links container">
         <a class="footer__logo logo" href="index.html" aria-label="Перейти на главную страницу">
           <svg class="logo__text" role="img" width="128" height="24" viewBox="0 0 128 24" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -157,7 +175,7 @@
           </svg>
         </a>
 
-        <section class="footer__socials socials">
+        <div class="footer__socials socials">
           <h3 class="visually-hidden">Наши соцсети</h3>
           <ul class="socials__list">
             <li class="socials__item">
@@ -191,8 +209,7 @@
               </a>
             </li>
           </ul>
-        </section>
-
+        </div>
 
         <a class="footer__developed developed" href="https://htmlacademy.ru/">
           <p class="developed__text">HTML Academy</p>
@@ -203,11 +220,9 @@
               fill="#666666" />
           </svg>
         </a>
-      </div>
-    </footer>
-
-
-  </main>
+      </section>
+    </div>
+  </footer>
 
 </body>
 

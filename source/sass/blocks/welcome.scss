@@ -1,6 +1,15 @@
 .welcome {
+  position: relative;
   display: flex;
-  background-color: #ffffff;
+  justify-content: space-between;
+  padding-top: 26px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    background-color: #ffffff;
+    padding: 60px 80px;
+    gap: 87px;
+  }
 }
 
 .welcome__dillers {
@@ -10,9 +19,30 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .welcome__address {
   font-style: normal;
   line-height: 20px;
+
+  p {
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+
+    p {
+      margin: 20px 0 0 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }

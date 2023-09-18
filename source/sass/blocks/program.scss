@@ -1,16 +1,46 @@
 .program {
+  position: relative;
   background-color: $bg-color;
-  padding: 30px 33px 18px 20px;
+  padding: 30px 30px 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 30px 52px 52px;
+  }
 }
 
 .program__title {
   font-family: $accent-font;
   font-size: 24px;
-  line-height: 37px;
+  line-height: 36px;
   margin: 0;
   text-transform: uppercase;
   color: #000000;
+  margin-left: 71px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    font-size: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 162px;
+  }
 }
+
+
+.program__description {
+  margin: 29px 0 23px 0;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    max-width: 340px;
+    margin: 24px 0 52px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 73px 0 53px 0;
+  }
+}
+
 
 .program__link {
   color: #000000;
@@ -19,4 +49,28 @@
   line-height: 24px;
   margin: 0;
   text-transform: uppercase;
+}
+
+.program::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $primary-color;
+  top: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+    top: 93px;
+    right: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 30px;
+  }
 }

@@ -1,19 +1,35 @@
-.instraction {
-  padding: 0 20px;
-}
-
 .instraction__title {
   margin-bottom: 40px;
 }
 
 .instraction__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 280px 280px;
+    justify-content: space-between;
+    row-gap: 37px;
+    column-gap: 137px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 0;
+  }
 }
 
 .instraction__item {
   display: flex;
   gap: 20px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    max-width: 230px;
+    margin-bottom: 0;
+  }
 }
 
 .instraction__item-text {
@@ -23,6 +39,10 @@
 
 .instraction__item:last-child {
   margin-bottom: 53px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 53px;
+  }
 }
 
 .instraction__item--leaf::before {
