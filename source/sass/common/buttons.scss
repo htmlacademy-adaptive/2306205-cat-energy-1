@@ -10,14 +10,15 @@
   border: none;
   background-color: $primary-color;
 
-  &--more {
+
+  &--secondary {
     color: $main-text-color;
     background-color: $bg-color;
-  }
 
-  @media (min-width: $tablet-width), (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: 20px;
-    padding: 17px 27px;
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+      padding: 17px 27px;
+    }
   }
 }
