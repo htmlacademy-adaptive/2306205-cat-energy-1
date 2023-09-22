@@ -9,8 +9,9 @@
 </head>
 
 <body class="body-page">
+
   <header class="header">
-    <div class="header__wrap container">
+    <div class="header__wrap header__wrap--no-js container">
       <a class="header__logo" href="index.html" aria-label="Перейти на главную страницу">
         <img class="logo__img" src="img/logo-img-mobile.svg" width="33" height="37" alt="Иконка логотипа Кэт энерджи">
       </a>
@@ -18,23 +19,21 @@
         <img class="logo__text" src="img/logo-text-mobile.svg" width="101" height="18"
           alt="Надпись логотипа Кэт энерджи">
       </a>
+      <button class="header__toggle" type="button" aria-label="Открыть меню"></button>
 
-      <div class="header__nav">
-        <button class="header__button" type="button" aria-label="Открыть меню"></button>
-        <nav class="header__menu main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="header__menu main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -224,6 +223,6 @@
     </div>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
-
 </html>

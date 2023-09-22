@@ -1,42 +1,98 @@
 .header {
-  padding: 13px 0 15px 0;
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+    padding: 13px 0 15px 0;
+    max-width: $mobile-width-only;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 0 0 0;
+  }
 }
 
 .header__wrap {
-  display: flex;
-  justify-content: space-between;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      display: none;
+    }
+  }
+
+
+  @media (max-width: $mobile-width-only) {
+    display: grid;
+    grid-template-columns: auto auto 24px;
+    align-items: center;
+
+    &--no-js {
+      &~ .header__menu {
+        display: grid;
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .header__toggle {
+        display: none;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .header__logo {
-  display: block;
-  margin: auto 0;
+  img {
+    display: block;
+  }
 }
 
-.header__menu {
-  display: none;
-  position: absolute;
-  top: 65px;
-  right: 0;
-  width: 100%;
-  background-color: #ffffff;
-}
 
-.header__button {
-  position: relative;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
+.header__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 
-.header__button::after {
-  position: absolute;
-  content: "";
-  background-image: url("../img/button-menu-open.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 25px;
-  height: 18px;
-  top: calc(50% - 9px);
-  right: 0;
+  @media (max-width: $mobile-width-only) {
+    background: transparent;
+    border: none;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+    &--closed {
+      &::before {
+        content: "";
+        position: relative;
+        display: block;
+        height: 2px;
+        background-color: #000000;
+        box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+        top: -8px;
+      }
+
+      & ~ .header__menu {
+        display: none;
+      }
+    }
+
+    &--opened {
+      & ~ .header__menu {
+        display: block;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        height: 20px;
+        background: url("../img/button-menu-opened.svg") no-repeat right 0 center;
+      }
+    }
+  }
 }
