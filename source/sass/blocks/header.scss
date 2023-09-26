@@ -1,8 +1,6 @@
 .header {
   @media (max-width: $mobile-width-only) {
-    position: relative;
     padding: 13px 0 15px 0;
-    max-width: $mobile-width-only;
   }
 
   @media (min-width: $tablet-width) {
@@ -15,84 +13,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    .logo {
-      display: none;
-    }
-  }
-
-
-  @media (max-width: $mobile-width-only) {
-    display: grid;
-    grid-template-columns: auto auto 24px;
-    align-items: center;
-
-    &--no-js {
-      &~ .header__menu {
-        display: grid;
-        position: static;
-        text-align: center;
-        margin-top: 10px;
-      }
-
-      .header__toggle {
-        display: none;
-      }
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    display: flex;
   }
 }
 
 .header__logo {
   img {
     display: block;
-  }
-}
-
-
-.header__toggle {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    background: transparent;
-    border: none;
-    padding: 0;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-
-    &--closed {
-      &::before {
-        content: "";
-        position: relative;
-        display: block;
-        height: 2px;
-        background-color: #000000;
-        box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
-        top: -8px;
-      }
-
-      & ~ .header__menu {
-        display: none;
-      }
-    }
-
-    &--opened {
-      & ~ .header__menu {
-        display: block;
-      }
-
-      &::before {
-        content: "";
-        display: block;
-        height: 20px;
-        background: url("../img/button-menu-opened.svg") no-repeat right 0 center;
-      }
-    }
   }
 }

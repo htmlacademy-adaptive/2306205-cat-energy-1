@@ -11,17 +11,15 @@
 <body class="body-page">
 
   <header class="header">
-    <div class="header__wrap header__wrap--no-js container">
-      <a class="header__logo" href="index.html" aria-label="Перейти на главную страницу">
-        <img class="logo__img" src="img/logo-img-mobile.svg" width="33" height="37" alt="Иконка логотипа Кэт энерджи">
-      </a>
+    <div class="header__wrap container">
       <a class="header__logo logo" href="index.html" aria-label="Перейти на главную страницу">
+        <img class="logo__img" src="img/logo-img-mobile.svg" width="33" height="37" alt="Иконка логотипа Кэт энерджи">
         <img class="logo__text" src="img/logo-text-mobile.svg" width="101" height="18"
           alt="Надпись логотипа Кэт энерджи">
       </a>
-      <button class="header__toggle" type="button" aria-label="Открыть меню"></button>
 
       <nav class="header__menu main-nav">
+        <button class="main-nav__toggle main-nav__toggle--no-js" type="button" aria-label="Открыть меню"></button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
             <a class="main-nav__link" href="index.html">Главная</a>
@@ -53,7 +51,7 @@
 
     <section class="all-programs container">
       <h2 class="visually-hidden">Программы питания</h2>
-      <article class="all-programs__program program">
+      <article class="all-programs__program program program--slim">
         <h3 class="program__title">Похудение</h3>
         <p class="program__description">
           Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
@@ -62,7 +60,7 @@
         <a class="program__link" href="#">Каталог slim</a>
       </article>
 
-      <article class="all-programs__program program">
+      <article class="all-programs__program program program--muscles">
         <h3 class="program__title">Набор массы</h3>
         <p class="program__description">
           Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
@@ -94,7 +92,7 @@
     </section>
 
     <section class="example">
-      <div class="example__wrap">
+      <div class="example__wrap container">
         <h2 class="example__title main-title">Живой пример</h2>
         <p class="example__text">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
@@ -112,7 +110,7 @@
               <dd class="example__results-index">60 дней</dd>
             </div>
           </dl>
-          <p class="example__cost">Затраты на питание: 15 000 руб.</p>
+          <p class="example__cost">Затраты на питание: <span>15 000 руб.</span></p>
         </div>
       </div>
 
@@ -137,13 +135,19 @@
 
     <div class="footer__map">
       <h3 class="visually-hidden">Офис на карте</h3>
-      <img class="map-location" src="img/image-location-mobile.jpg" alt="Наш адрес на карте" width="320" height="362">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603786915722!2d30.32122812370243!3d59.93871648747781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0xba80b1be36549aba!2sHtml%20Academy!5e0!3m2!1sru!2sru!4v1695709636874!5m2!1sru!2sru"
+      width="100%"
+      height="400"
+      style="border: 0;"
+      allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
     </div>
 
     <div class="footer__wrap">
 
       <section class="footer__links container">
-        <a class="footer__logo logo" href="index.html" aria-label="Перейти на главную страницу">
+        <a class="footer__logo" href="index.html" aria-label="Перейти на главную страницу">
           <svg class="logo__text" role="img" width="128" height="24" viewBox="0 0 128 24" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path

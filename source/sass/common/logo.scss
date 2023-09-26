@@ -1,0 +1,15 @@
+.logo {
+  display: flex;
+  gap: 20px;
+
+  @media (max-width: $mobile-width-only) {
+    display: grid;
+    grid-template-columns: 33px 1fr 33px;
+    align-items: center;
+    gap: 0;
+  }
+}
+
+.logo__text {
+  justify-self: center;
+}

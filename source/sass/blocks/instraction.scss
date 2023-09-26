@@ -7,16 +7,14 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 280px 280px;
-    justify-content: space-between;
-    row-gap: 37px;
-    column-gap: 137px;
+    grid-template-columns: auto auto;
+    row-gap: 94px;
+    column-gap: 20%;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;
-    column-gap: 0;
+    column-gap: 8%;
   }
 }
 
@@ -27,7 +25,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    max-width: 230px;
+    min-width: 230px;
     margin-bottom: 0;
   }
 }

@@ -1,15 +1,9 @@
 .example {
   position: relative;
-  padding: 0 30px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 30px;
-  }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;
-    padding: 0 110px;
+    gap: 15%;
   }
 }
 
@@ -29,14 +23,18 @@
 
   @media (min-width: $desktop-width) {
     top: 120px;
-    height: 256px;
+    height: 480px;
   }
 }
 
 
 .example__wrap {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 99px;
+  }
+
   @media (min-width: $desktop-width) {
-    max-width: 436px;
+    width: 31%;
   }
 }
 
@@ -51,39 +49,53 @@
 
 .example__numbers {
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto;
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
 
 .example__results {
   display: flex;
-  justify-content: space-between;
-
-  @media (min-width: $tablet-width) {
-    justify-content: start;
-    gap: 42px;
-  }
+  gap: 11%;
 }
 
 .example__results-wrap {
   position: relative;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  width: 40%;
+  min-width: 124px;
+  padding: 14px 0 18px 0;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+  }
 }
 
 .example__results-value {
+  position: absolute;
   font-size: 12px;
   line-height: 12px;
+  padding: 0 18px;
+  text-align: center;
+  bottom: -15px;
+  left: calc(50% - 45px);
+  background-color: $bg-color;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 14px;
     line-height: 14px;
+    background-color: $bg-color;
   }
 }
 
@@ -91,7 +103,9 @@
   font-family: $accent-font;
   font-size: 24px;
   line-height: 24px;
-  margin: auto;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
   color: #000000;
   order: -1;
 
@@ -107,18 +121,18 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
-  }
-
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     max-width: 175px;
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
-    text-align: left;
+    max-width: 100%;
+    display: flex;
+    gap: 30%;
   }
 }

@@ -1,15 +1,14 @@
-let headerWrap = document.querySelector('.header__wrap');
-let navToggle = document.querySelector('.header__toggle');
+let navToggle = document.querySelector('.main-nav__toggle');
 
-headerWrap.classList.remove('header__wrap--no-js');
-navToggle.classList.add('header__toggle--closed');
+navToggle.classList.remove('main-nav__toggle--no-js');
+navToggle.classList.add('main-nav__toggle--closed');
 
 navToggle.addEventListener('click', function () {
-  if (navToggle.classList.contains('header__toggle--closed')) {
-    navToggle.classList.remove('header__toggle--closed');
-    navToggle.classList.add('header__toggle--opened');
+  if (navToggle.classList.contains('main-nav__toggle--closed')) {
+    navToggle.classList.remove('main-nav__toggle--closed');
+    navToggle.classList.add('main-nav__toggle--opened');
   } else {
-    navToggle.classList.add('header__toggle--closed');
-    navToggle.classList.remove('header__toggle--opened');
+    navToggle.classList.add('main-nav__toggle--closed');
+    navToggle.classList.remove('main-nav__toggle--opened');
   }
 });
