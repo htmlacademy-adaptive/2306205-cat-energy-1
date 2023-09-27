@@ -55,6 +55,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
 }
 
@@ -65,7 +66,7 @@
   align-self: center;
 
   @media (min-width: $tablet-width) {
-    grid-row: 1/2;
+    flex-grow: 1;
   }
 }
 
@@ -114,6 +115,11 @@
 
 .product__description-data {
   text-align: right;
+}
+
+
+.product__button {
+  grid-column: 1/3;
 }
 
 

@@ -1,12 +1,12 @@
 .logo {
-  display: flex;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 33px 1fr 33px;
+  align-items: center;
+  gap: 0;
 
-  @media (max-width: $mobile-width-only) {
-    display: grid;
-    grid-template-columns: 33px 1fr 33px;
-    align-items: center;
-    gap: 0;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 20px;
   }
 }
 
