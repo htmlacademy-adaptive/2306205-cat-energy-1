@@ -137,7 +137,7 @@ a {
   color: #000000;
 }
 
-@media (max-width: 767.99px) {
+@media (max-width: 767.8px) {
   .header {
     padding: 13px 0 15px 0;
   }
@@ -173,14 +173,17 @@ a {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-@media (max-width: 767.99px) {
-  .main-nav__list {
-    background-color: #ffffff;
-  }
+  position: absolute;
+  min-width: 320px;
+  left: -20px;
+  right: -20px;
+  top: 15px;
+  z-index: 10;
+  background-color: #ffffff;
 }
 @media (min-width: 768px) {
   .main-nav__list {
+    position: static;
     display: flex;
     justify-content: end;
     column-gap: 33px;
@@ -192,7 +195,7 @@ a {
 .main-nav__item {
   position: relative;
 }
-@media (max-width: 767.99px) {
+@media (max-width: 767.8px) {
   .main-nav__item {
     text-align: center;
     padding: 22px 0 24px 0;
@@ -224,10 +227,9 @@ a {
     line-height: 24px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
   .main-nav__link {
     font-size: 20px;
-    line-height: 24px;
   }
 }
 
@@ -242,6 +244,13 @@ a {
   height: 24px;
   cursor: pointer;
 }
+.main-nav__toggle::before {
+  content: "";
+  position: relative;
+  display: block;
+  height: 20px;
+  background: url("../img/button-menu-opened.svg") no-repeat right center;
+}
 .main-nav__toggle--closed::before {
   content: "";
   display: block;
@@ -249,29 +258,9 @@ a {
   background-color: #000000;
   box-shadow: 0 8px 0 0 #000000, 0 -8px 0 0 #000000;
 }
-@media (max-width: 767.99px) {
+@media (max-width: 767.8px) {
   .main-nav__toggle--closed + .main-nav__list {
     display: none;
-  }
-}
-.main-nav__toggle--opened::before {
-  content: "";
-  position: relative;
-  display: block;
-  height: 20px;
-  background: url("../img/button-menu-opened.svg") no-repeat right center;
-}
-.main-nav__toggle--opened + .main-nav__list {
-  position: absolute;
-  min-width: 320px;
-  left: -20px;
-  right: -20px;
-  top: 15px;
-  z-index: 10;
-}
-@media (max-width: 767.99px) {
-  .main-nav__toggle--no-js ~ .main-nav__list {
-    margin-top: 10px;
   }
 }
 @media (min-width: 768px) {
@@ -600,6 +589,10 @@ a {
   margin-top: 47px;
 }
 
+.footer__logo {
+  text-decoration: none;
+}
+
 .example {
   position: relative;
 }
@@ -750,7 +743,6 @@ a {
 }
 
 .welcome {
-  position: relative;
   display: flex;
   justify-content: space-between;
   padding-top: 26px;
