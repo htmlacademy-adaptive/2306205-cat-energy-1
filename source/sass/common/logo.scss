@@ -12,4 +12,13 @@
 
 .logo__text {
   justify-self: center;
+  fill: #111111;
+
+  &:hover {
+    fill: #3e3e3e;
+  }
+
+  &:active {
+    fill: #6b6b6b;
+  }
 }

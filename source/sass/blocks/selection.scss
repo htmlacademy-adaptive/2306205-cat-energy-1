@@ -1,6 +1,10 @@
 .selection {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -10,6 +14,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 80px;
   }
+}
+
+.selection__title {
+  margin-top: 65px;
 }
 
 .selection__lead {
@@ -65,8 +73,9 @@
 .selection__note {
   margin-top: 21px;
   margin-bottom: 0;
+  text-align: center;
 
-  @media (max-width: $tablet-width) {
-    text-align: center;
+  @media (min-width: $tablet-width) {
+    text-align: left;
   }
 }

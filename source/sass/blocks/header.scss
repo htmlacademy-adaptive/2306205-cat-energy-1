@@ -1,10 +1,18 @@
 .header {
-  @media (max-width: $mobile-width-only) {
-    padding: 13px 0 15px 0;
+  padding: 13px 0 15px 0;
+  border-bottom: 1px solid #e6e6e6;
+
+  &--main-page {
+    border: none;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 25px 0 0 0;
+    padding: 25px 0 15px 0;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 0 29px 0;
   }
 }
 

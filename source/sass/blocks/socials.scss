@@ -1,10 +1,22 @@
 .socials__list {
   @include list-reset;
   display: flex;
-  gap: 24px;
+  gap: 28px;
 }
 
 
 .socials__link {
   display: flex;
+
+  svg {
+    fill: #666666;
+
+    &:hover {
+      fill: $primary-color;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }

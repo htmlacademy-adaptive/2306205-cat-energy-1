@@ -1,15 +1,26 @@
+.instration__wrap {
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+  }
+}
+
 .instraction__title {
-  margin-bottom: 40px;
+  margin: 0;
 }
 
 .instraction__list {
   @include list-reset;
+  margin-top: 43px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: auto auto;
     row-gap: 94px;
     column-gap: 20%;
+    margin-top: 72px;
+    margin-right: 73px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,6 +44,10 @@
 .instraction__item-text {
   margin: 0;
   padding-top: 3px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+  }
 }
 
 .instraction__item:last-child {
@@ -43,34 +58,33 @@
   }
 }
 
-.instraction__item--leaf::before {
-  content: "";
-  width: 60px;
-  height: 60px;
-  background: $primary-color url("../img/icon-leaf.svg") no-repeat center center;
-  flex-shrink: 0;
-}
-
-.instraction__item--water::before {
-  content: "";
-  width: 60px;
-  height: 60px;
-  background: $primary-color url("../img/icon-water.svg") no-repeat center center;
-  flex-shrink: 0;
-}
-
-.instraction__item--meal::before {
-  content: "";
-  width: 60px;
-  height: 60px;
-  background: $primary-color url("../img/icon-meal.svg") no-repeat center center;
-  flex-shrink: 0;
-}
-
+.instraction__item--leaf::before,
+.instraction__item--water::before,
+.instraction__item--meal::before,
 .instraction__item--time::before {
   content: "";
   width: 60px;
   height: 60px;
-  background: $primary-color url("../img/icon-time.svg") no-repeat center center;
   flex-shrink: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.instraction__item--leaf::before {
+  background: $primary-color url("../img/icon-leaf.svg") no-repeat center center;
+}
+
+.instraction__item--water::before {
+  background: $primary-color url("../img/icon-water.svg") no-repeat center center;
+}
+
+.instraction__item--meal::before {
+  background: $primary-color url("../img/icon-meal.svg") no-repeat center center;
+}
+
+.instraction__item--time::before {
+  background: $primary-color url("../img/icon-time.svg") no-repeat center center;
 }

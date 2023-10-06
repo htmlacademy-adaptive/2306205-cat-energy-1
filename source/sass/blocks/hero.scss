@@ -16,7 +16,7 @@
   @media (min-width: $tablet-width) {
     align-items: start;
     background: none;
-    margin: 0 30px 526px 120px;
+    margin: 0 30px 526px 90px;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,7 +43,11 @@
   @media (min-width: $tablet-width) {
     color: #000000;
     text-align: left;
-    margin-top: 57px;
+    margin-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 81px;
   }
 }
 
@@ -84,11 +88,9 @@
 
 .hero__button {
   margin-top: 138px;
-  width: 100%;
-  max-width: 320px;
+  // min-width: 280px;
 
   @media (min-width: $tablet-width) {
-    width: auto;
     margin-top: 52px;
   }
 }

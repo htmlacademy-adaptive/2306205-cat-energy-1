@@ -3,8 +3,34 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  color: $main-text-color;
+
+  svg {
+    fill: #666666;
+
+    &:hover {
+      fill: $primary-color;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    gap: 21px;
+  }
 }
 
 .developed__text {
   margin: 0;
+
+  &:hover {
+    color: $primary-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
