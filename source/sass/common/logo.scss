@@ -2,16 +2,32 @@
   display: grid;
   grid-template-columns: 33px 1fr 33px;
   align-items: center;
+  justify-items: center;
   gap: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
     gap: 20px;
+
+    &:hover {
+      opacity: 80%;
+    }
+
+    &:focus {
+      opacity: 80%;
+    }
+
+    &:active {
+      opacity: 60%;
+    }
   }
 }
 
+.logo__img {
+  display: block;
+}
+
 .logo__text {
-  justify-self: center;
   fill: #111111;
 
   &:hover {
@@ -20,5 +36,12 @@
 
   &:active {
     fill: #6b6b6b;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:hover,
+    &:active {
+      fill: #111111;
+    }
   }
 }

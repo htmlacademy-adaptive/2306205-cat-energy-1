@@ -2,6 +2,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     gap: 6.5%;
+    margin-top: 82px;
   }
 }
 
@@ -14,5 +15,6 @@
 
   @media (min-width: $desktop-width) {
     min-width: 570px;
+    margin-top: 0;
   }
 }

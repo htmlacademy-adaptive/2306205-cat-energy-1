@@ -1,14 +1,17 @@
 .socials__list {
   @include list-reset;
   display: flex;
-  gap: 28px;
+  justify-content: center;
+  gap: 24px;
 }
-
 
 .socials__link {
   display: flex;
+  width: 28px;
+  height: 22px;
 
   svg {
+    margin: auto;
     fill: #666666;
 
     &:hover {

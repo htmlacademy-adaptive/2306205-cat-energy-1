@@ -30,6 +30,14 @@
     }
   }
 
+  &--section {
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+      padding: 16px 26px;
+    }
+  }
+
   &--secondary {
     color: $main-text-color;
     background-color: $bg-color;

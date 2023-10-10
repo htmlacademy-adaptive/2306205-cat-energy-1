@@ -19,11 +19,13 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
-    gap: 21px;
+    gap: 24px;
   }
 }
 
 .developed__text {
+  font-size: 16px;
+  line-height: 20px;
   margin: 0;
 
   &:hover {

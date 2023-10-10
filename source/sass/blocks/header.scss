@@ -4,6 +4,21 @@
 
   &--main-page {
     border: none;
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 1;
+
+      .main-nav {
+        color: #ffffff;
+
+        &__item--active {
+          text-decoration-color: inherit;
+        }
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -21,11 +36,5 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-}
-
-.header__logo {
-  img {
-    display: block;
   }
 }
