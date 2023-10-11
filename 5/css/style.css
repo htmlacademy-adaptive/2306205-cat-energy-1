@@ -214,7 +214,7 @@ a {
   .header--main-page .main-nav {
     color: #ffffff;
   }
-  .header--main-page .main-nav__item--active {
+  .header--main-page .main-nav .main-nav__link--active {
     -webkit-text-decoration-color: inherit;
             text-decoration-color: inherit;
   }
@@ -322,12 +322,6 @@ a {
     border: 0;
     padding: 0;
   }
-  .main-nav__item--active {
-    -webkit-text-decoration: underline #68b738 2px;
-            text-decoration: underline #68b738 2px;
-    text-underline-offset: 8px;
-    text-underline-position: under;
-  }
 }
 
 .main-nav__link {
@@ -341,6 +335,12 @@ a {
   .main-nav__link {
     font-size: 18px;
     line-height: 24px;
+  }
+  .main-nav__link--active {
+    -webkit-text-decoration: underline #68b738 2px;
+            text-decoration: underline #68b738 2px;
+    text-underline-offset: 8px;
+    text-underline-position: under;
   }
 }
 @media (min-width: 1440px) {
