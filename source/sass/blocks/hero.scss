@@ -1,5 +1,15 @@
 .hero {
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    height: 694px;
+    background-image:
+      linear-gradient(to right,
+      transparent 0,
+      transparent 50%,
+      rgba(104, 183, 56, 0.85) 50%,
+      rgba(104, 183, 56, 0.85) 100%);
+  }
 }
 
 .hero__wrap {
@@ -16,11 +26,11 @@
   @media (min-width: $tablet-width) {
     align-items: start;
     background: none;
-    margin: 0 30px 526px 120px;
+    margin: 0 30px 526px 90px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 30px 185px 190px;
+    margin: 0 0 0 190px;
   }
 }
 
@@ -30,7 +40,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    display: inline-block;
+    align-items: start;
   }
 }
 
@@ -43,7 +53,11 @@
   @media (min-width: $tablet-width) {
     color: #000000;
     text-align: left;
-    margin-top: 57px;
+    margin-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 201px;
   }
 }
 
@@ -76,19 +90,16 @@
   @media (min-width: $desktop-width) {
     width: 552px;
     height: 499px;
-    top: 0;
-    left: calc(50% - 100px);
-    z-index: -10;
+    top: 120px;
+    left: calc(50% - 150px);
+    z-index: 0;
   }
 }
 
 .hero__button {
   margin-top: 138px;
-  width: 100%;
-  max-width: 320px;
 
   @media (min-width: $tablet-width) {
-    width: auto;
     margin-top: 52px;
   }
 }

@@ -1,13 +1,87 @@
-.main-nav__list {
-  @include list-reset;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.main-nav {
+  position: relative;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    max-width: 70%;
+  }
 }
 
+.main-nav__toggle {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  background: transparent;
+  border: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: relative;
+    display: block;
+    height: 20px;
+    background: url("../img/button-menu-opened.svg") no-repeat right center;
+  }
+
+  &--closed {
+    + .main-nav__list {
+      display: none;
+    }
+
+    @media (min-width: $tablet-width) {
+      + .main-nav__list {
+        display: flex;
+      }
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      height: 2px;
+      background-color: #000000;
+      box-shadow: 0 8px 0 0 #000000, 0 -8px 0 0 #000000;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  @include list-reset;
+
+  position: absolute;
+  top: 15px;
+  min-width: 320px;
+  left: -20px;
+  right: -20px;
+  z-index: 10;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: flex;
+    justify-content: end;
+    column-gap: 33px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    background-color: transparent;
+  }
+}
 
 .main-nav__item {
-  margin: 22px 0 24px 0;
+  text-align: center;
+  padding: 22px 0 20px 0;
+  border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border: 0;
+    padding: 0;
+  }
 }
 
 .main-nav__link {
@@ -15,5 +89,28 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
+  color: inherit;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+
+    &--active {
+      text-decoration: underline $primary-color 2px;
+      text-underline-offset: 8px;
+      text-underline-position: under;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

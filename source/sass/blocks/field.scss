@@ -8,10 +8,108 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  margin-right: 13px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: normal;
+    line-height: 32px;
+  }
+
+  // Radio button
+  &--radio {
+    position: relative;
+    margin-left: 45px;
+    margin-bottom: 11px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      left: -45px;
+      top: -5px;
+      border: 1px solid #cdcdcd;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: "";
+      width: 13px;
+      height: 13px;
+      position: absolute;
+      left: -36.5px;
+      top: 3.5px;
+      background: $primary-color center;
+      border-radius: 50%;
+      display: none;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-left: 60px;
+      margin-bottom: 0;
+
+      &::before {
+        width: 40px;
+        height: 40px;
+        left: -60px;
+      }
+
+      &::after {
+        width: 18px;
+        height: 18px;
+        left: -49px;
+        top: 6.5px;
+      }
+    }
+  }
+
+  // Checkboxes
+
+  &--checkbox {
+    position: relative;
+    margin-left: 45px;
+    margin-bottom: 11px;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      left: -45px;
+      top: -5px;
+      border: 1px solid #cdcdcd;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 14px;
+      left: -39px;
+      top: 3px;
+      background: url("../img/icon-tick.svg") no-repeat;
+      display: none;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-left: 60px;
+      margin-bottom: 32px;
+
+      &::before {
+        width: 40px;
+        height: 40px;
+        left: -60px;
+      }
+
+      &::after {
+        width: 24px;
+        height: 19px;
+        left: -52px;
+        top: 6px;
+        background: url("../img/icon-tick-bigger.svg") no-repeat;
+      }
+    }
   }
 }
 
@@ -20,11 +118,37 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 14px 0 13px 0;
+  padding: 14px 8px 13px 15px;
   flex-grow: 1;
+  border: 1px solid #e7e7e7;
+  height: 45px;
+
+  &--comment {
+    height: auto;
+  }
+
+  &--email {
+    background: url("../img/icon-email.svg") no-repeat top 16px right 13.5px;
+  }
+
+  &--phone {
+    background: url("../img/icon-phone.svg") no-repeat top 16px right 13.5px;
+  }
+
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    padding: 14px 8px 13px 20px;
     line-height: normal;
+    height: 52px;
+
+    &--comment {
+      height: auto;
+    }
   }
+}
+
+.field__input-radio:checked + .field__label--radio::after,
+.field__input-checkbox:checked + .field__label--checkbox::after {
+  display: block;
 }

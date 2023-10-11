@@ -1,15 +1,20 @@
 .all-programs {
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;
-    gap: 80px;
+    gap: 6.5%;
+    margin-top: 82px;
   }
 }
 
 .all-programs__program {
-  margin: 20px 0;
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+  }
 
   @media (min-width: $desktop-width) {
-    width: 570px;
+    min-width: 570px;
+    margin-top: 0;
   }
 }

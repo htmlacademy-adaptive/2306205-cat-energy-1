@@ -1,8 +1,11 @@
 .welcome {
-  position: relative;
   display: flex;
   justify-content: space-between;
-  padding-top: 26px;
+  padding: 26px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 40px;
+  }
 
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -13,7 +16,6 @@
 }
 
 .welcome__dillers {
-  max-width: 140px;
   font-family: $accent-font;
   font-size: 16px;
   line-height: 20px;

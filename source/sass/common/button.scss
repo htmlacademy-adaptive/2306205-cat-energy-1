@@ -2,23 +2,56 @@
   display: block;
   color: #ffffff;
   font-family: $accent-font;
-  font-size: 14px;
-  line-height: 18px;
   text-transform: uppercase;
   text-align: center;
-  padding: 11px 28px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 54px;
   border: none;
   background-color: $primary-color;
 
+  &:hover {
+    background-color: $primary-color--hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--hero {
+    font-size: inherit;
+    line-height: inherit;
+    padding: 11px 74px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+      padding: 14px 26px;
+    }
+  }
+
+  &--section {
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+      padding: 16px 26px;
+    }
+  }
 
   &--secondary {
     color: $main-text-color;
     background-color: $bg-color;
 
     @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 20px;
       padding: 17px 27px;
+    }
+
+    &:hover {
+      background-color: $bg-color-secondary;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
     }
   }
 }
