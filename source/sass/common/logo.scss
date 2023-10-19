@@ -6,8 +6,11 @@
   gap: 0;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    gap: 20px;
+    display: block;
+
+    svg {
+      display: none;
+    }
 
     &:hover {
       opacity: 80%;
