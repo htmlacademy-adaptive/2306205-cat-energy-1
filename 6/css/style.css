@@ -1937,15 +1937,45 @@ a {
 }
 
 .gift {
-  background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85) 0, rgba(104, 183, 56, 0.85) 100%), url("../img/image-gift.jpg");
+  padding: 64px 0 43px 0;
+  background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85) 0, rgba(104, 183, 56, 0.85) 100%), url("../img/image-gift-mobile.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 65px 0 43px 0;
+}
+@media (min-width: 768px) {
+  .gift {
+    padding: 64px 127px 74px 88px;
+  }
+}
+@media (min-width: 1440px) {
+  .gift {
+    padding: 64px 0 43px 0;
+  }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .gift {
-    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85) 0, rgba(104, 183, 56, 0.85) 100%), url("../img/image-gift@2x.jpg");
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85) 0, rgba(104, 183, 56, 0.85) 100%), url("../img/image-gift-mobile@2x.jpg");
+  }
+}
+@media (min-width: 768px) {
+  .gift {
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85) 0, rgba(104, 183, 56, 0.85) 100%), url("../img/image-gift-tablet.jpg");
+  }
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .gift {
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85) 0, rgba(104, 183, 56, 0.85) 100%), url("../img/image-gift-tablet@2x.jpg");
+  }
+}
+@media (min-width: 1440px) {
+  .gift {
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85) 0, rgba(104, 183, 56, 0.85) 100%), url("../img/image-gift-desktop.jpg");
+  }
+}
+@media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
+  .gift {
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85) 0, rgba(104, 183, 56, 0.85) 100%), url("../img/image-gift-desktop@2x.jpg");
   }
 }
 
@@ -1956,15 +1986,44 @@ a {
   text-align: center;
   margin: 0;
 }
+@media (min-width: 768px) {
+  .gift__description {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: end;
+  }
+}
+@media (min-width: 1440px) {
+  .gift__description {
+    display: block;
+    text-align: center;
+  }
+}
 
 .gift__description::before {
   display: block;
-  position: relative;
   content: "";
   background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 56px;
   height: 60px;
   margin: 0 auto 60px auto;
+}
+@media (min-width: 768px) {
+  .gift__description::before {
+    width: 58px;
+    height: 63px;
+    margin: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .gift__description::before {
+    width: 58px;
+    height: 63px;
+    margin: 0 auto 60px auto;
+  }
 }
 
 .slider {
