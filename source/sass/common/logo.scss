@@ -30,6 +30,7 @@
   display: block;
 }
 
+
 .logo__text {
   fill: #111111;
 
@@ -42,9 +43,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    &:hover,
-    &:active {
-      fill: #111111;
-    }
+    display: none;
   }
 }

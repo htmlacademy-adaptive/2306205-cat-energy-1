@@ -6,6 +6,83 @@
   @media (min-width: $tablet-width) {
     padding: 77px 30px 57px 52px;
   }
+
+  // Green circles
+  &::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    top: 24px;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 200px;
+      top: 93px;
+      right: 63px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 30px;
+    }
+  }
+}
+
+.program--slim::after {
+  position: absolute;
+  content: "";
+  top: 20px;
+  left: 25px;
+  width: 36px;
+  height: 50px;
+  background-image: url("../img/stack.svg#slim-programm");
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    height: 194px;
+    top: 83px;
+    left: auto;
+    right: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 97px;
+    top: 47px;
+    left: 45px;
+    right: auto;
+  }
+}
+
+.program--muscles::after {
+  position: absolute;
+  content: "";
+  top: 36px;
+  left: 10px;
+  width: 67px;
+  height: 28px;
+  background-image: url("../img/stack.svg#muscles-programm");
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 112px;
+    top: 134px;
+    left: auto;
+    right: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
+    top: 69px;
+    left: 11px;
+    right: auto;
+  }
 }
 
 .program__title {
@@ -26,7 +103,6 @@
     margin-left: 162px;
   }
 }
-
 
 .program__description {
   position: relative;
@@ -49,10 +125,8 @@
   }
 }
 
-
 .program__link {
   display: block;
-  position: relative;
   color: #000000;
   font-family: $accent-font;
   font-size: 16px;
@@ -69,28 +143,24 @@
   @media (min-width: $desktop-width) {
     margin-top: 27px;
   }
-}
 
-.program::before {
-  position: absolute;
-  content: "";
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: $primary-color;
-  top: 24px;
-
-  @media (min-width: $tablet-width) {
-    width: 200px;
-    height: 200px;
-    top: 93px;
-    right: 63px;
+  &::after {
+    content: "";
+    display: inline-block;
+    margin-left: 25px;
+    width: 24px;
+    height: 12px;
+    fill: #000000;
+    background-image: url("../img/stack.svg#arrow");
   }
 
-  @media (min-width: $desktop-width) {
-    width: 100px;
-    height: 100px;
-    top: 47px;
-    left: 30px;
+  &:hover::after {
+    width: 32px;
+    height: 12px;
+    background-image: url("../img/stack.svg#arrow-hover");
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
