@@ -19,14 +19,14 @@
 
     @media (min-resolution: 2dppx) {
       background-image:
-      linear-gradient(to right,
+        linear-gradient(to right,
       transparent 0,
       transparent calc(50% - 520px),
       rgba(104, 183, 56, 0.85) calc(50% - 520px),
       rgba(104, 183, 56, 0.85) calc(50% + 520px),
       rgb(98, 166, 58) calc(50% + 520px),
       rgb(98, 166, 58) 100%),
-      url("../img/image-background-desktop@2x.jpg");
+        url("../img/image-background-desktop@2x.jpg");
     }
   }
 }
