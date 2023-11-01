@@ -8,10 +8,6 @@
   @media (min-width: $tablet-width) {
     display: block;
 
-    svg {
-      display: none;
-    }
-
     &:hover {
       opacity: 80%;
     }
@@ -28,6 +24,16 @@
 
 .logo__img {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
 }
 
 

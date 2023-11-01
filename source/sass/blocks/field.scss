@@ -88,7 +88,7 @@
       height: 14px;
       left: -39px;
       top: 3px;
-      background: url("../img/icon-tick.svg") no-repeat;
+      background-image: url("../img/stack.svg#icon-tick");
       display: none;
     }
 
@@ -107,7 +107,6 @@
         height: 19px;
         left: -52px;
         top: 6px;
-        background: url("../img/icon-tick-bigger.svg") no-repeat;
       }
     }
   }
@@ -122,25 +121,36 @@
   flex-grow: 1;
   border: 1px solid #e7e7e7;
   height: 45px;
+  box-sizing: border-box;
 
   &--comment {
     height: auto;
   }
 
   &--email {
-    background: url("../img/icon-email.svg") no-repeat top 16px right 13.5px;
+    background: url("../img/stack.svg#icon-email") no-repeat;
+    background-position: top 13px right 13px;
+    background-size: 20px 20px;
+    padding-right: 35px;
   }
 
   &--phone {
-    background: url("../img/icon-phone.svg") no-repeat top 16px right 13.5px;
+    background: url("../img/stack.svg#icon-phone") no-repeat;
+    background-position: top 13px right 13px;
+    background-size: 20px 20px;
+    padding-right: 35px;
   }
-
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    padding: 14px 8px 13px 20px;
+    padding-left: 20px;
     line-height: normal;
     height: 52px;
+
+    &--email,
+    &--phone {
+      background-position: top 15px right 17px;
+    }
 
     &--comment {
       height: auto;
