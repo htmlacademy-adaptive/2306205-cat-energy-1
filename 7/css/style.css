@@ -85,9 +85,6 @@ a {
   .logo {
     display: block;
   }
-  .logo svg {
-    display: none;
-  }
   .logo:hover {
     opacity: 80%;
   }
@@ -101,6 +98,18 @@ a {
 
 .logo__img {
   display: block;
+}
+@media (min-width: 768px) {
+  .logo__img {
+    width: 174px;
+    height: 50px;
+  }
+}
+@media (min-width: 1440px) {
+  .logo__img {
+    width: 202px;
+    height: 59px;
+  }
 }
 
 .logo__text {
@@ -262,7 +271,7 @@ a {
   position: relative;
   display: block;
   height: 20px;
-  background: url("../img/button-menu-opened.svg") no-repeat right center;
+  background: url("../img/stack.svg#menu-opened") no-repeat right center;
 }
 .main-nav__toggle--closed + .main-nav__list {
   display: none;
@@ -766,6 +775,10 @@ a {
   width: 60px;
   height: 60px;
   flex-shrink: 0;
+  background-size: 30px 32px;
+  background-color: #68b738;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 @media (min-width: 768px) {
   .instraction__item--leaf::before,
@@ -778,19 +791,19 @@ a {
 }
 
 .instraction__item--leaf::before {
-  background: #68b738 url("../img/stack.svg#leaf") no-repeat center center;
+  background-image: url("../img/stack.svg#leaf");
 }
 
 .instraction__item--water::before {
-  background: #68b738 url("../img/icon-water.svg") no-repeat center center;
+  background-image: url("../img/stack.svg#water");
 }
 
 .instraction__item--meal::before {
-  background: #68b738 url("../img/icon-meal.svg") no-repeat center center;
+  background-image: url("../img/stack.svg#utensil");
 }
 
 .instraction__item--time::before {
-  background: #68b738 url("../img/icon-time.svg") no-repeat center center;
+  background-image: url("../img/stack.svg#alarm");
 }
 
 .footer {
@@ -1164,11 +1177,9 @@ a {
 
 .socials__link {
   display: flex;
-  width: 28px;
-  height: 22px;
+  align-content: center;
 }
 .socials__link svg {
-  margin: auto;
   fill: #666666;
 }
 .socials__link svg:hover {
@@ -1484,7 +1495,7 @@ a {
   height: 14px;
   left: -39px;
   top: 3px;
-  background: url("../img/icon-tick.svg") no-repeat;
+  background-image: url("../img/stack.svg#icon-tick");
   display: none;
 }
 @media (min-width: 768px) {
@@ -1502,7 +1513,6 @@ a {
     height: 19px;
     left: -52px;
     top: 6px;
-    background: url("../img/icon-tick-bigger.svg") no-repeat;
   }
 }
 
@@ -1515,22 +1525,32 @@ a {
   flex-grow: 1;
   border: 1px solid #e7e7e7;
   height: 45px;
+  box-sizing: border-box;
 }
 .field__input--comment {
   height: auto;
 }
 .field__input--email {
-  background: url("../img/icon-email.svg") no-repeat top 16px right 13.5px;
+  background: url("../img/stack.svg#icon-email") no-repeat;
+  background-position: top 13px right 13px;
+  background-size: 20px 20px;
+  padding-right: 35px;
 }
 .field__input--phone {
-  background: url("../img/icon-phone.svg") no-repeat top 16px right 13.5px;
+  background: url("../img/stack.svg#icon-phone") no-repeat;
+  background-position: top 13px right 13px;
+  background-size: 20px 20px;
+  padding-right: 35px;
 }
 @media (min-width: 768px) {
   .field__input {
     font-size: 20px;
-    padding: 14px 8px 13px 20px;
+    padding-left: 20px;
     line-height: normal;
     height: 52px;
+  }
+  .field__input--email, .field__input--phone {
+    background-position: top 15px right 17px;
   }
   .field__input--comment {
     height: auto;
@@ -2014,6 +2034,16 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (min-width: 768px) {
+  .gift {
+    padding: 64px 127px 74px 88px;
+  }
+}
+@media (min-width: 1440px) {
+  .gift {
+    padding: 64px 0 43px 0;
+  }
+}
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .gift {
     background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85) 0, rgba(104, 183, 56, 0.85) 100%), url("../img/image-gift-mobile@2x.jpg");
@@ -2067,9 +2097,8 @@ a {
 .gift__description::before {
   display: block;
   content: "";
-  background-image: url("../img/icon-gift.svg");
+  background-image: url("../img/stack.svg#gift");
   background-repeat: no-repeat;
-  background-size: cover;
   width: 56px;
   height: 60px;
   margin: 0 auto 60px auto;
