@@ -49,11 +49,6 @@
     left: 260.5px;
   }
 
-  svg {
-    fill: #666666;
-    margin: auto;
-  }
-
   &::before {
     position: absolute;
     content: "";
@@ -69,5 +64,14 @@
       height: 512px;
       top: -234px;
     }
+  }
+
+  &::after {
+    content: "";
+    margin: auto;
+    width: 24px;
+    height: 18px;
+    mask-image: url("../img/stack.svg#slider-button");
+    background-color: #666666;
   }
 }

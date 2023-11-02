@@ -66,6 +66,10 @@
   width: 60px;
   height: 60px;
   flex-shrink: 0;
+  background-size: 30px 32px;
+  background-color: $primary-color;
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-width: $tablet-width) {
     width: 80px;
@@ -74,17 +78,17 @@
 }
 
 .instraction__item--leaf::before {
-  background: $primary-color url("../img/icon-leaf.svg") no-repeat center center;
+  background-image: url("../img/stack.svg#leaf");
 }
 
 .instraction__item--water::before {
-  background: $primary-color url("../img/icon-water.svg") no-repeat center center;
+  background-image: url("../img/stack.svg#water");
 }
 
 .instraction__item--meal::before {
-  background: $primary-color url("../img/icon-meal.svg") no-repeat center center;
+  background-image: url("../img/stack.svg#utensil");
 }
 
 .instraction__item--time::before {
-  background: $primary-color url("../img/icon-time.svg") no-repeat center center;
+  background-image: url("../img/stack.svg#alarm");
 }
