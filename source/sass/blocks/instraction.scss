@@ -78,17 +78,17 @@
 }
 
 .instraction__item--leaf::before {
-  background-image: url("../img/stack.svg#leaf");
+  background-image: url("../img/icons/sprite.svg#leaf");
 }
 
 .instraction__item--water::before {
-  background-image: url("../img/stack.svg#water");
+  background-image: url("../img/icons/sprite.svg#water");
 }
 
 .instraction__item--meal::before {
-  background-image: url("../img/stack.svg#utensil");
+  background-image: url("../img/icons/sprite.svg#utensil");
 }
 
 .instraction__item--time::before {
-  background-image: url("../img/stack.svg#alarm");
+  background-image: url("../img/icons/sprite.svg#alarm");
 }
