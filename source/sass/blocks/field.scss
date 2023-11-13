@@ -88,7 +88,7 @@
       height: 14px;
       left: -39px;
       top: 3px;
-      background-image: url("../img/stack.svg#icon-tick");
+      background-image: url("../img/icons/sprite.svg#icon-tick");
       display: none;
     }
 
@@ -128,7 +128,7 @@
   }
 
   &--email {
-    background-image: url("../img/stack.svg#icon-email");
+    background-image: url("../img/icons/sprite.svg#icon-email");
     background-repeat: no-repeat;
     background-position: top 13px right 13px;
     background-size: 20px 20px;
@@ -136,7 +136,7 @@
   }
 
   &--phone {
-    background-image: url("../img/stack.svg#icon-phone");
+    background-image: url("../img/icons/sprite.svg#icon-phone");
     background-repeat: no-repeat;
     background-position: top 13px right 13px;
     background-size: 20px 20px;
