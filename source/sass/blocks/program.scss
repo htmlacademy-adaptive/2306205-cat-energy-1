@@ -1,10 +1,10 @@
 .program {
   position: relative;
   background-color: $bg-color;
-  padding: 30px 30px 20px 20px;
+  padding: 30px 20px 21px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 30px 57px 52px;
+    padding: 77px 30px 62px 52px;
   }
 
   // Green circles
@@ -15,12 +15,12 @@
     height: 50px;
     border-radius: 50%;
     background-color: $primary-color;
-    top: 24px;
+    top: 25px;
 
     @media (min-width: $tablet-width) {
       width: 200px;
       height: 200px;
-      top: 93px;
+      top: 91px;
       right: 63px;
     }
 
@@ -28,7 +28,7 @@
       width: 100px;
       height: 100px;
       top: 47px;
-      left: 30px;
+      left: 52px;
     }
   }
 }
@@ -36,16 +36,16 @@
 .program--slim::after {
   position: absolute;
   content: "";
-  top: 20px;
-  left: 25px;
+  top: 21px;
+  left: 27px;
   width: 36px;
-  height: 50px;
-  background-image: url("../img/icons/sprite.svg#slim-programm");
+  height: 51px;
+  background-image: url("../img/stack.svg#slim-programm");
 
   @media (min-width: $tablet-width) {
     width: 140px;
     height: 194px;
-    top: 83px;
+    top: 81px;
     left: auto;
     right: 93px;
   }
@@ -53,8 +53,8 @@
   @media (min-width: $desktop-width) {
     width: 70px;
     height: 97px;
-    top: 47px;
-    left: 45px;
+    top: 41px;
+    left: 68px;
     right: auto;
   }
 }
@@ -62,25 +62,25 @@
 .program--muscles::after {
   position: absolute;
   content: "";
-  top: 36px;
-  left: 10px;
-  width: 67px;
-  height: 28px;
-  background-image: url("../img/icons/sprite.svg#muscles-programm");
+  top: 35px;
+  left: 11px;
+  width: 70px;
+  height: 30px;
+  background-image: url("../img/stack.svg#muscles-programm");
 
   @media (min-width: $tablet-width) {
-    width: 268px;
-    height: 112px;
-    top: 134px;
+    width: 272px;
+    height: 125px;
+    top: 132px;
     left: auto;
-    right: 34px;
+    right: 26px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 134px;
-    height: 56px;
-    top: 69px;
-    left: 11px;
+    width: 150px;
+    height: 58px;
+    top: 67px;
+    left: 25px;
     right: auto;
   }
 }
@@ -88,7 +88,8 @@
 .program__title {
   font-family: $accent-font;
   font-size: 24px;
-  line-height: 37px;
+  line-height: 38px;
+  font-weight: 400;
   margin: 0;
   text-transform: uppercase;
   color: #000000;
@@ -107,13 +108,13 @@
 .program__description {
   position: relative;
   margin: 29px 0 0 0;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
     min-width: 340px;
     max-width: 40%;
-    margin: 24px 0 0 0;
+    margin: 23px 0 0 0;
 
     padding-bottom: 0;
     border-bottom: none;
@@ -126,7 +127,8 @@
 }
 
 .program__link {
-  display: block;
+  display: flex;
+  align-items: center;
   color: #000000;
   font-family: $accent-font;
   font-size: 16px;
@@ -136,28 +138,31 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: normal;
-    margin-top: 52px;
+    margin-top: 59px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 27px;
+    margin-top: 34px;
   }
 
   &::after {
     content: "";
-    display: inline-block;
-    margin-left: 25px;
+    margin-left: 16px;
     width: 24px;
     height: 12px;
     fill: #000000;
-    background-image: url("../img/icons/sprite.svg#arrow");
+    background-image: url("../img/stack.svg#arrow");
+
+    @media (min-width: $tablet-width) {
+      margin-left: 26px;
+    }
   }
 
   &:hover::after {
     width: 32px;
     height: 12px;
-    background-image: url("../img/icons/sprite.svg#arrow-hover");
+    fill: #000000;
+    background-image: url("../img/stack.svg#arrow-hover");
   }
 
   &:active {

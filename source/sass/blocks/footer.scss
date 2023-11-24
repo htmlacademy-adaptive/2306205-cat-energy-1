@@ -3,10 +3,8 @@
 }
 
 .footer__address {
-  margin-top: 40px;
-
   @media (min-width: $tablet-width) {
-    margin-top: 101px;
+    margin-top: 75px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,7 +22,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px 0;
+    padding: 68px 0;
   }
 }
 
@@ -34,48 +32,49 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .footer__socials {
-  margin-top: 18px;
+  margin-top: 19px;
   width: 100%;
-  padding: 20px 0;
+  padding: 20px 0 19px 0;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 0 33px;
+    margin: 0;
     border: none;
     width: auto;
     padding: 0;
+    justify-self: center;
   }
 }
 
 .footer__developed {
-  margin-top: 18px;
+  margin-top: 19px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    justify-self: end;
   }
 }
 
 .footer__logo {
   text-decoration: none;
-}
 
-.footer__logo-text {
-  display: block;
-  fill: #111111;
+  &-text {
+    display: block;
+    fill: #111111;
+  }
 
-  &:hover {
+  &:hover .footer__logo-text {
     fill: #3e3e3e;
   }
 
-  &:active {
+  &:active .footer__logo-text {
     fill: #6b6b6b;
   }
 }
@@ -90,9 +89,5 @@
 
   @media (min-width: $tablet-width) {
     height: 400px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 80px;
   }
 }

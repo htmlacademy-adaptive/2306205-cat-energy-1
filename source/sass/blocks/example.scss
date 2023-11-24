@@ -1,50 +1,71 @@
 .example {
   position: relative;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 100px;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: -30px;
+      content: "";
+      height: 1px;
+      width: calc(100% + 60px);
+      background-color: #e6e6e6;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 72px;
+
+    &::after {
+      display: none;
+    }
   }
 }
+
+// Серый фон
 
 .example::before {
   position: absolute;
   content: "";
   width: calc(100% + 40px);
-  height: calc(100% + 40px);
+  height: 100%;
   left: -20px;
-  bottom: -40px;
+  top: 0;
   background-color: $bg-color;
   z-index: -10;
 
   @media (min-width: $tablet-width) {
     left: -30px;
-    bottom: -101px;
+    top: auto;
+    bottom: 0;
     width: calc(100% + 60px);
     height: 462px;
   }
 
   @media (min-width: $desktop-width) {
     left: -110px;
-    bottom: -81px;
     width: calc(100% + 220px);
   }
 }
 
 
 .example__wrap {
-  @media (min-width: $tablet-width) {
-    margin-bottom: 99px;
-  }
-
   @media (min-width: $desktop-width) {
     width: 35%;
-    margin-bottom: 0;
   }
 }
 
 .example__title {
-  padding-top: 28px;
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 0;
@@ -52,7 +73,7 @@
 }
 
 .example__text {
-  margin: 40px 0 0 0;
+  margin: 41px 0 0 0;
 
   @media (min-width: $tablet-width) {
     margin: 60px 0 0 0;
@@ -81,7 +102,15 @@
 .example__results {
   margin: 0;
   display: flex;
-  gap: 11%;
+  gap: 11.2%;
+
+  @media (min-width: $tablet-width) {
+    gap: 8%;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 10%;
+  }
 }
 
 .example__results-wrap {
@@ -90,13 +119,14 @@
   flex-direction: column;
   width: 40%;
   min-width: 124px;
-  padding: 14px 0 18px 0;
+  padding: 13px 0 17px 0;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
 
   @media (min-width: $tablet-width) {
     min-width: 162px;
     width: 27%;
+    padding: 17px 0 23px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -112,7 +142,7 @@
   padding: 0 15px;
   text-align: center;
   bottom: -16px;
-  left: calc(50% - 42px);
+  left: calc(50% - 44px);
   background-color: $bg-color;
 
   &--days {
@@ -161,25 +191,30 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  margin: 34px 0 20px 0;
+  margin: 33px 0 20px 0;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    max-width: 175px;
+    font-size: 20.5px;
+    line-height: 29px;
+    max-width: 180px;
     text-align: right;
-    margin: 0;
+    margin: 7px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 100%;
     display: flex;
-    gap: 15%;
-    margin: 60px 0 0 0;
+    gap: 14.6%;
+    margin: 55px 0 0;
   }
 }
 
 .example__slider {
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 104px;
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0;

@@ -1,15 +1,17 @@
 .add-catalog {
+  padding-top: 4px;
+
   @media (min-width: $tablet-width) {
     padding-top: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 76px;
+    padding-top: 77px;
   }
 }
 
 .add-catalog-wrap {
-  margin-top: 49px;
+  margin-top: 45px;
 
   @media (min-width: $tablet-width) {
     margin-top: 80px;
@@ -18,8 +20,9 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 895px 1fr;
+    margin-top: 93px;
     gap: 80px;
-    margin-bottom: 87px;
+    margin-bottom: 51px;
   }
 }
 
@@ -28,18 +31,30 @@
 
   @media (min-width: $tablet-width) {
     border: 1px solid #cdcdcd;
-    padding: 26px 38px;
+    padding: 21px 38px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 0 17px 0;
+    padding: 0;
     border: none;
+  }
+}
+
+.add-catalog__title {
+  @media (min-width: $tablet-width) {
+    margin-left: 24px;
+    padding-left: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    padding-left: 0;
   }
 }
 
 .add-catalog__item {
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 
   &::before {
     position: absolute;
@@ -52,10 +67,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 52px;
 
     &:last-child {
-      margin-bottom: 0;
+      margin-bottom: 5px;
     }
 
     &::before {
@@ -100,13 +115,14 @@
 }
 
 .add-catalog__gift {
-  margin-top: 35px;
+  margin-top: 55px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     margin-top: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
+    margin-top: -15px;
   }
 }

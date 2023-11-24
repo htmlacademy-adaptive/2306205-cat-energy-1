@@ -1,5 +1,5 @@
 .gift {
-  padding: 65px 0 43px 0;
+  padding: 65px 0 42px 0;
 
   background-image:
     linear-gradient(to right,
@@ -10,15 +10,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media (min-width: $tablet-width) {
-    padding: 64px 127px 74px 88px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 64px 0 43px 0;
-  }
-
-
   @media (min-resolution: 2dppx) {
     background-image:
       linear-gradient(to right,
@@ -28,7 +19,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 64px 127px 74px 88px;
+    padding: 64px 127px 72px 88px;
 
     background-image:
       linear-gradient(to right,
@@ -87,11 +78,11 @@
 .gift__description::before {
   display: block;
   content: "";
-  background-image: url("../img/icons/sprite.svg#gift");
+  background-image: url("../img/stack.svg#gift");
   background-repeat: no-repeat;
   width: 56px;
   height: 60px;
-  margin: 0 auto 60px auto;
+  margin: 0 auto 62px auto;
 
   @media (min-width: $tablet-width) {
     width: 58px;

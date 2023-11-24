@@ -35,17 +35,19 @@
 .slider__button {
   position: absolute;
   display: flex;
+  justify-content: center;
   background-color: #ffffff;
   width: 40px;
   height: 40px;
-  top: 106px;
-  left: 120.5px;
+  margin: auto 0;
+  left: 120px;
+  bottom: 0;
+  top: 0;
   border-radius: 100%;
   border: 2px solid #666666;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    top: 234px;
     left: 260.5px;
   }
 
@@ -54,15 +56,14 @@
     content: "";
     width: 4px;
     height: 256px;
-    background-color: #666666;
     top: -108px;
-    left: 16px;
+    background-color: #666666;
     border-radius: 2px;
     z-index: -10;
 
     @media (min-width: $tablet-width) {
       height: 512px;
-      top: -234px;
+      top: -236px;
     }
   }
 
@@ -71,7 +72,27 @@
     margin: auto;
     width: 24px;
     height: 18px;
-    mask-image: url("../img/icons/sprite.svg#slider-button");
+    mask-image: url("../img/stack.svg#slider-button");
     background-color: #666666;
   }
+}
+
+// Состояния
+.slider__button:hover::before,
+.slider__button:hover::after {
+  background-color: $primary-color;
+}
+
+.slider__button:hover {
+  border: 2px solid $primary-color;
+}
+
+.slider__button:active::before,
+.slider__button:active::after {
+  background-color: $primary-color--hover;
+  opacity: 0.6;
+}
+
+.slider__button:active {
+  border: 2px solid rgba(95, 173, 46, 0.6);
 }

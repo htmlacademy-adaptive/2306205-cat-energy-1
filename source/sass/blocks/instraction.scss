@@ -1,8 +1,12 @@
-.instration__wrap {
-  margin-top: 20px;
+.instraction {
+  padding: 24px 0 28px 0;
 
   @media (min-width: $tablet-width) {
-    margin-top: 45px;
+    padding: 45px 0 101px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 73px 0 125px 0;
   }
 }
 
@@ -12,24 +16,28 @@
 
 .instraction__list {
   @include list-reset;
-  margin-top: 43px;
+  margin-top: 40px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: auto auto;
-    row-gap: 94px;
-    column-gap: 20%;
-    margin-top: 72px;
+    row-gap: 133px;
+    column-gap: 20.6%;
+    margin-top: 73px;
     margin-right: 73px;
+    counter-reset: li;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    column-gap: 8%;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 6.6%;
+    margin-right: 0;
+    margin-top: 72px;
   }
 }
 
 .instraction__item {
+  position: relative;
   display: flex;
   gap: 20px;
   margin-bottom: 20px;
@@ -38,6 +46,33 @@
     flex-direction: column;
     min-width: 230px;
     margin-bottom: 0;
+
+    &::after {
+      counter-increment: li;
+      content: counter(li);
+      position: absolute;
+      font-family: $accent-font;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+      top: -40px;
+      right: 5px;
+      z-index: -1;
+    }
+
+    &:first-child::after {
+      right: 30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      right: -1px;
+    }
+
+    &:first-child::after {
+      right: 22px;
+    }
   }
 }
 
@@ -46,15 +81,7 @@
   padding-top: 3px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 10px;
-  }
-}
-
-.instraction__item:last-child {
-  margin-bottom: 53px;
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 53px;
+    padding-top: 12px;
   }
 }
 
@@ -78,17 +105,17 @@
 }
 
 .instraction__item--leaf::before {
-  background-image: url("../img/icons/sprite.svg#leaf");
+  background-image: url("../img/stack.svg#leaf");
 }
 
 .instraction__item--water::before {
-  background-image: url("../img/icons/sprite.svg#water");
+  background-image: url("../img/stack.svg#water");
 }
 
 .instraction__item--meal::before {
-  background-image: url("../img/icons/sprite.svg#utensil");
+  background-image: url("../img/stack.svg#utensil");
 }
 
 .instraction__item--time::before {
-  background-image: url("../img/icons/sprite.svg#alarm");
+  background-image: url("../img/stack.svg#alarm");
 }

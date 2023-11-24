@@ -8,16 +8,14 @@
 .socials__link {
   display: flex;
   align-content: center;
+  flex-wrap: wrap;
+  fill: #666666;
 
-  svg {
-    fill: #666666;
+  &:hover .socials__img {
+    fill: $primary-color;
+  }
 
-    &:hover {
-      fill: $primary-color;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
+  &:active .socials__img {
+    opacity: 0.3;
   }
 }

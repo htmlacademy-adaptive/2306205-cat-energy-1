@@ -13,12 +13,14 @@
     <div class="header__wrap container">
       <a class="header__logo logo" href="index.html" aria-label="Перейти на главную страницу">
         <picture>
-          <source media="(min-width: 768px)" srcset="img/logo-all-parts.svg">
-          <img class="logo__img" src="img/logo-img-mobile.svg" width="33" height="37" alt="Логотип Кэт энерджи">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="logo__img" src="img/logo-img-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
         </picture>
         <svg class="logo__text" width="102" height="18.5" role="img" aria-label="Текстовый логотип Кэт Энерджи">
           <use xlink:href="img/icons/sprite.svg#textlogo"></use>
         </svg>
+
       </a>
 
       <nav class="header__menu main-nav">
@@ -84,8 +86,8 @@
         </fieldset>
       </div>
 
-      <fieldset class="selection__field-group">
-        <legend class="selection__title section-title">Контактные данные (владельца кота)</legend>
+      <fieldset class="selection__field-group selection__field-group--owner">
+        <legend class="selection__title section-title">Контактные данные <br> (владельца кота)</legend>
         <h3 class="visually-hidden">Информация о хозяине</h3>
         <ul class="selection__list selection__list--owner selection__wrap">
           <li class="selection__item field">
@@ -105,12 +107,13 @@
         <legend class="selection__title section-title">Комментарий</legend>
         <h3 class="visually-hidden">Оставьте комментарий</h3>
         <div class="selection__list field selection__list--comment">
-          <textarea class="field__input field__input--comment" name="comment" rows="5"
+          <textarea class="field__input field__input--comment" name="comment" rows="7"
             placeholder="Расскажите обо всех повадках кота"></textarea>
+
         </div>
       </fieldset>
 
-      <fieldset class="selection__field-group">
+      <fieldset class="selection__field-group selection__field-group--add">
         <legend class="selection__title section-title">Дополнительно</legend>
         <h3 class="visually-hidden">Дополнительные опции</h3>
         <ul class="selection__list selection__list--add">
@@ -144,7 +147,7 @@
   <footer class="footer">
     <h2 class="visually-hidden">Наши контакты</h2>
 
-    <div class="footer__address welcome container">
+    <div class="footer__address welcome welcome--background container">
       <h3 class="visually-hidden">Наш адрес</h3>
       <p class="welcome__dillers">Приглашаем <br>к сотрудничеству <br>дилеров!</p>
       <address class="welcome__address">ул. Большая <br>Конюшенная, д. 19/8 <p>Санкт-Петербург</p>
@@ -163,7 +166,7 @@
 
       <section class="footer__links container">
         <a class="footer__logo" href="index.html" aria-label="Перейти на главную страницу">
-          <svg class="footer__logo-text" role="img" width="128" height="24" role="img"
+          <svg class="footer__logo-text" role="img" width="128" height="24"
             aria-label="Текстовый логотип Кэт Энерджи">
             <use xlink:href="img/icons/sprite.svg#textlogo"></use>
           </svg>
@@ -174,21 +177,21 @@
           <ul class="socials__list">
             <li class="socials__item">
               <a class="socials__link" href="#" aria-label="Мы ВКонтакте">
-                <svg role="img" width="28" height="22">
+                <svg class="socials__img" role="img" width="28" height="22">
                   <use xlink:href="img/icons/sprite.svg#vk"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
               <a class="socials__link" href="#" aria-label="Наш канал на Ютуб">
-                <svg role="img" width="28" height="22">
+                <svg class="socials__img" role="img" width="28" height="22">
                   <use xlink:href="img/icons/sprite.svg#youtube"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
               <a class="socials__link" href="#" aria-label="Наш телеграм">
-                <svg role="img" width="28" height="22">
+                <svg class="socials__img" role="img" width="28" height="22">
                   <use xlink:href="img/icons/sprite.svg#tg"></use>
                 </svg>
               </a>
