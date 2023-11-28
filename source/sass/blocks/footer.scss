@@ -3,10 +3,6 @@
 }
 
 .footer__address {
-  @media (min-width: $tablet-width) {
-    margin-top: 75px;
-  }
-
   @media (min-width: $desktop-width) {
     margin-top: 95px;
   }

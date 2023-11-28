@@ -129,7 +129,7 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 40px 40px;
       column-gap: 60px;
-      row-gap: 33px;
+      row-gap: 31px;
     }
 
     @media (min-width: $desktop-width) {
@@ -183,7 +183,7 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 47px;
+    margin-top: 49px;
     grid-template-columns: 1fr 1fr;
     gap: 58px;
     margin-bottom: 61px;
