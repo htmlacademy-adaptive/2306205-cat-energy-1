@@ -43,18 +43,6 @@
   }
 }
 
-.add-catalog__title {
-  @media (min-width: $tablet-width) {
-    margin-left: 24px;
-    padding-left: 16px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 0;
-    padding-left: 0;
-  }
-}
-
 .add-catalog__item {
   position: relative;
   margin-bottom: 30px;

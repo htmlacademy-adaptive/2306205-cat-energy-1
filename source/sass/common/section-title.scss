@@ -1,46 +1,54 @@
 .section-title {
   position: relative;
   display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: start;
-  width: 100%;
-  gap: 21px;
+  grid-template-columns: 0 auto 1fr;
+  align-items: center;
+  width: calc(100% + 20px + 20px);
+  margin: 0 0 0 -20px;
+  gap: 20px;
   font-family: $accent-font;
   font-size: 24px;
   font-weight: normal;
   line-height: 26px;
-  margin: 0;
   padding: 0;
   color: #000000;
 
-  &::after {
+  &::before {
     content: "";
-    width: calc(100% + 20px);
+    width: 100%;
     height: 2px;
     background-color: $primary-color;
-    margin-top: 14px;
+    margin-top: 6px;
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: $primary-color;
+    margin-top: 6px;
+  }
+
+  &--owners-contact {
+    &::after {
+      margin-top: -16px;
+    }
   }
 
   @media (min-width: $tablet-width) {
+    grid-template-columns: 30px auto 1fr;
+    width: calc(100% + 70px + 70px);
+    margin-left: -70px;
     font-size: 36px;
     line-height: 36px;
     gap: 40px;
-    width: calc(100% + 5px);
-
-    &::after {
-      width: 100%;
-      margin-top: 21px;
-    }
 
     &::before {
-      content: "";
-      position: absolute;
-      top: 7px;
-      right: 103.4%;
-      width: 100%;
-      height: 2px;
-      background-color: $primary-color;
-      margin-top: 14px;
+      margin-top: 10px;
+    }
+
+    &::after {
+      margin-top: 10px;
     }
 
     br {
@@ -49,13 +57,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    &::after {
-      width: calc(100% + 110px);
-      margin-top: 21px;
-    }
-
-    &::before {
-      right: 103.4%;
-    }
+    grid-template-columns: 70px auto 1fr;
+    width: calc(100% + 110px + 110px);
+    margin-left: -110px;
   }
 }
