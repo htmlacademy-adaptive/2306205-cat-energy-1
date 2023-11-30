@@ -9,21 +9,25 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0;
+  width: 23px;
+  height: 23px;
+  top: -32px;
   right: 0;
   background: transparent;
   border: none;
-  padding: 0;
-  width: 24px;
-  height: 24px;
   cursor: pointer;
 
   &::before {
     content: "";
     position: relative;
     display: block;
-    height: 20px;
-    background: url("../img/icons/sprite.svg#menu-opened") no-repeat right center;
+    height: 18px;
+    width: 18px;
+    background: url("../img/stack.svg#menu-opened") no-repeat right center;
   }
 
   &--closed {
@@ -41,6 +45,7 @@
       content: "";
       display: block;
       height: 2px;
+      width: 24px;
       background-color: #000000;
       box-shadow: 0 8px 0 0 #000000, 0 -8px 0 0 #000000;
     }
@@ -55,7 +60,7 @@
   @include list-reset;
 
   position: absolute;
-  top: 15px;
+  top: 14px;
   min-width: 320px;
   left: -20px;
   right: -20px;
@@ -64,12 +69,17 @@
 
   @media (min-width: $tablet-width) {
     position: static;
+    padding: 2px 5px 0 0;
     display: flex;
-    justify-content: end;
-    column-gap: 33px;
-    row-gap: 10px;
+    max-width: 480px;
+    column-gap: 34px;
+    row-gap: 20px;
     flex-wrap: wrap;
     background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 4px 0 0 0;
   }
 }
 
@@ -104,6 +114,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
+    line-height: 30px;
   }
 
   &:hover {

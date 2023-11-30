@@ -18,14 +18,14 @@
 }
 
 .selection__title {
-  margin-top: 28px;
+  margin-top: 27px;
 
   @media (min-width: $tablet-width) {
     margin-top: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 70px;
+    margin-top: 45px;
   }
 }
 
@@ -50,15 +50,27 @@
 .selection__field-group {
   border: none;
   padding: 0;
-  margin: 38px 0 0 0;
+  margin: 40px 0 0 0;
 
   @media (min-width: $tablet-width) {
     margin: 65px 0 0 0;
   }
 
+  &--add {
+    margin-top: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 68px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 72px;
+    }
+  }
+
   &--program {
     position: relative;
-    margin-top: 53px;
+    margin-top: 51px;
 
     &::before {
       position: absolute;
@@ -81,9 +93,9 @@
     }
 
     @media (min-width: $tablet-width) {
-      margin-top: 72px;
+      margin-top: 75px;
       border: 1px solid #e7e7e7;
-      padding: 28px 27px 32px 27px;
+      padding: 26px 27px 32px 27px;
 
       &::before,
       &::after {
@@ -93,6 +105,13 @@
 
     @media (min-width: $desktop-width) {
       margin: 65px 0 0 0;
+      padding: 30px 27px 30px 27px;
+    }
+  }
+
+  &--owner {
+    @media (min-width: $desktop-width) {
+      margin: 70px 0 0 0;
     }
   }
 }
@@ -101,16 +120,16 @@
   @include list-reset;
 
   &--add {
-    margin-top: 40px;
+    margin-top: 41px;
 
     @media (min-width: $tablet-width) {
-      margin-top: 62px;
+      margin-top: 60px;
       display: grid;
       align-items: start;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 40px 40px;
-      column-gap: 61px;
-      row-gap: 30px;
+      column-gap: 60px;
+      row-gap: 31px;
     }
 
     @media (min-width: $desktop-width) {
@@ -121,20 +140,28 @@
   }
 
   &--owner {
-    margin-top: 36px;
-    margin-bottom: -12px;
+    margin-top: 35px;
+    margin-bottom: -15px;
 
     @media (min-width: $tablet-width) {
-      margin-top: 76px;
+      margin-top: 74px;
       margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: -13px;
     }
   }
 
   &--comment {
-    margin-top: 36px;
+    margin-top: 38px;
 
     @media (min-width: $tablet-width) {
       margin-top: 87px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 77px;
     }
   }
 }
@@ -148,32 +175,39 @@
 }
 
 .selection__send {
-  margin-top: 28px;
+  margin-top: 30px;
 
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 50px;
+    margin-top: 49px;
     grid-template-columns: 1fr 1fr;
-    gap: 64px;
+    gap: 58px;
+    margin-bottom: 61px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 54px;
+    margin-top: 57px;
     gap: 78px;
+    margin-bottom: 80px;
   }
 }
 
 .selection__note {
-  margin-top: 21px;
+  margin-top: 20px;
   margin-bottom: 0;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    margin-top: 11px;
+    margin-top: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-top: 13px;
   }
 }

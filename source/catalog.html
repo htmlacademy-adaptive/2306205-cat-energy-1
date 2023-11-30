@@ -5,7 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи. Каталог продуктов</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="images/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="../fonts/lato/lato-regular.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" href="../fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin>
 </head>
 
 <body class="body-page">
@@ -13,12 +19,14 @@
     <div class="header__wrap container">
       <a class="header__logo logo" href="index.html" aria-label="Перейти на главную страницу">
         <picture>
-          <source media="(min-width: 768px)" srcset="img/logo-all-parts.svg">
-          <img class="logo__img" src="img/logo-img-mobile.svg" width="33" height="37" alt="Логотип Кэт энерджи">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="logo__img" src="img/logo-img-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
         </picture>
         <svg class="logo__text" width="102" height="18.5" role="img" aria-label="Текстовый логотип Кэт Энерджи">
           <use xlink:href="img/icons/sprite.svg#textlogo"></use>
         </svg>
+
       </a>
 
       <nav class="header__menu main-nav">
@@ -80,7 +88,7 @@
               <div class="product__img">
                 <picture>
                   <source media="(min-width: 1440px)"
-                    srcset="img/catalog/chiken-1000-desktop.png 1x, img/catalog/chiken-1000-desktop@2x.png 2x,"
+                    srcset="img/catalog/chiken-1000-desktop.png 1x, img/catalog/chiken-1000-desktop@2x.png 2x"
                     width="172" height="196">
                   <source media="(min-width: 768px)"
                     srcset="img/catalog/chiken-1000-tablet.png 1x, img/catalog/chiken-1000-tablet@2x.png 2x" width="168"
@@ -143,7 +151,7 @@
               <div class="product__img">
                 <picture>
                   <source media="(min-width: 1440px)"
-                    srcset="img/catalog/fish-1000-desktop.png 1x, img/catalog/fish-1000-desktop@2x.png 2x," width="172"
+                    srcset="img/catalog/fish-1000-desktop.png 1x, img/catalog/fish-1000-desktop@2x.png 2x" width="172"
                     height="196">
                   <source media="(min-width: 768px)"
                     srcset="img/catalog/fish-1000-tablet.png 1x, img/catalog/fish-1000-tablet@2x.png 2x" width="168"
@@ -176,11 +184,11 @@
               <div class="product__img">
                 <picture>
                   <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/catalog/buckwheat-500-tablet.webp 1x, img/catalog/buckwheat-500-tablet@2x.webp 2x"
-                  width="161" height="172">
+                    srcset="img/catalog/buckwheat-500-tablet.webp 1x, img/catalog/buckwheat-500-tablet@2x.webp 2x"
+                    width="161" height="172">
                   <source type="image/webp"
-                  srcset="img/catalog/buckwheat-500-mobile.webp 1x, img/catalog/buckwheat-500-mobile@2x.webp 2x"
-                  width="68" height="86">
+                    srcset="img/catalog/buckwheat-500-mobile.webp 1x, img/catalog/buckwheat-500-mobile@2x.webp 2x"
+                    width="68" height="86">
 
                   <source media="(min-width: 768px)"
                     srcset="img/catalog/buckwheat-500-tablet.png 1x, img/catalog/buckwheat-500-tablet@2x.png 2x"
@@ -201,7 +209,7 @@
                 </tr>
                 <tr class="product__description-row">
                   <td class="product__description-term">Цена</td>
-                  <td class="product__description-data">700 ₽</td>
+                  <td class="product__description-data">400 ₽</td>
                 </tr>
               </table>
               <a href="#" class="product__button button">Заказать</a>
@@ -213,7 +221,7 @@
               <div class="product__img">
                 <picture>
                   <source media="(min-width: 1440px)"
-                    srcset="img/catalog/buckwheat-1000-desktop.png 1x, img/catalog/buckwheat-1000-desktop@2x.png 2x,"
+                    srcset="img/catalog/buckwheat-1000-desktop.png 1x, img/catalog/buckwheat-1000-desktop@2x.png 2x"
                     width="172" height="196">
                   <source media="(min-width: 768px)"
                     srcset="img/catalog/buckwheat-1000-tablet.png 1x, img/catalog/buckwheat-1000-tablet@2x.png 2x"
@@ -234,7 +242,7 @@
                 </tr>
                 <tr class="product__description-row">
                   <td class="product__description-term">Цена</td>
-                  <td class="product__description-data">1000 ₽</td>
+                  <td class="product__description-data">700 ₽</td>
                 </tr>
               </table>
               <a href="#" class="product__button button">Заказать</a>
@@ -264,7 +272,7 @@
                 </tr>
                 <tr class="product__description-row">
                   <td class="product__description-term">Цена</td>
-                  <td class="product__description-data">700 ₽</td>
+                  <td class="product__description-data">500 ₽</td>
                 </tr>
               </table>
               <a href="#" class="product__button button">Заказать</a>
@@ -283,7 +291,9 @@
 
 
     <section class="add-catalog container">
-      <h2 class="add-catalog__title section-title">Дополнительные товары</h2>
+      <div class="add-catalog__title-wrapper">
+        <h2 class="add-catalog__title section-title">Дополнительные товары</h2>
+      </div>
 
       <div class="add-catalog-wrap">
         <ul class="add-catalog__list">
@@ -347,7 +357,7 @@
   <footer class="footer">
     <h2 class="visually-hidden">Наши контакты</h2>
 
-    <div class="footer__address welcome container">
+    <div class="footer__address welcome welcome--background container">
       <h3 class="visually-hidden">Наш адрес</h3>
       <p class="welcome__dillers">Приглашаем <br>к сотрудничеству <br>дилеров!</p>
       <address class="welcome__address">ул. Большая <br>Конюшенная, д. 19/8 <p>Санкт-Петербург</p>
@@ -366,8 +376,7 @@
 
       <section class="footer__links container">
         <a class="footer__logo" href="index.html" aria-label="Перейти на главную страницу">
-          <svg class="footer__logo-text" role="img" width="128" height="24" role="img"
-            aria-label="Текстовый логотип Кэт Энерджи">
+          <svg class="footer__logo-text" role="img" width="128" height="24" aria-label="Текстовый логотип Кэт Энерджи">
             <use xlink:href="img/icons/sprite.svg#textlogo"></use>
           </svg>
         </a>
@@ -377,21 +386,21 @@
           <ul class="socials__list">
             <li class="socials__item">
               <a class="socials__link" href="#" aria-label="Мы ВКонтакте">
-                <svg role="img" width="28" height="22">
+                <svg class="socials__img" role="img" width="28" height="22">
                   <use xlink:href="img/icons/sprite.svg#vk"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
               <a class="socials__link" href="#" aria-label="Наш канал на Ютуб">
-                <svg role="img" width="28" height="22">
+                <svg class="socials__img" role="img" width="28" height="22">
                   <use xlink:href="img/icons/sprite.svg#youtube"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
               <a class="socials__link" href="#" aria-label="Наш телеграм">
-                <svg role="img" width="28" height="22">
+                <svg class="socials__img" role="img" width="28" height="22">
                   <use xlink:href="img/icons/sprite.svg#tg"></use>
                 </svg>
               </a>

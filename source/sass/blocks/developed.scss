@@ -5,34 +5,28 @@
   width: 100%;
   color: $main-text-color;
 
-  svg {
-    fill: #666666;
-
-    &:hover {
-      fill: $primary-color;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     width: auto;
     gap: 24px;
+    justify-content: flex-start;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.developed__img {
+  fill: #666666;
+  flex-shrink: 0;
 }
 
 .developed__text {
   font-size: 16px;
   line-height: 20px;
   margin: 0;
+}
 
-  &:hover {
-    color: $primary-color;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+.developed:hover .developed__img {
+  fill: $primary-color;
 }
