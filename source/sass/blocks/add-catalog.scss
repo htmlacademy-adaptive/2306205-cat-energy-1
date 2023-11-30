@@ -29,6 +29,16 @@
   }
 }
 
+.add-catalog__title-wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
 .add-catalog__list {
   @include list-reset;
 
