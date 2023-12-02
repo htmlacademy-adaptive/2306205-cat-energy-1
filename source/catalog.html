@@ -23,13 +23,13 @@
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="logo__img" src="img/logo-img-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
         </picture>
-        <svg class="logo__text" width="102" height="18.5" role="img" aria-label="Текстовый логотип Кэт Энерджи">
+        <svg class="logo__text" width="102" height="18" role="img" aria-label="Текстовый логотип Кэт Энерджи">
           <use xlink:href="img/icons/sprite.svg#textlogo"></use>
         </svg>
 
       </a>
 
-      <nav class="header__menu main-nav">
+      <nav class="header__menu main-nav main-nav--no-js">
         <button class="main-nav__toggle main-nav__toggle--no-js" type="button" aria-label="Открыть меню"></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -55,16 +55,24 @@
         <ul class="catalog__list">
           <li class="catalog__item product">
             <div class="product__container">
-              <div class="product__img">
+              <a href="#" class="product__img" title="Перейти на страницу товара">
                 <picture>
-                  <source media="(min-width: 768px)"
-                    srcset="img/catalog/chiken-500-tablet.png 1x, img/catalog/chiken-500-tablet@2x.png 2x" width="161"
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/catalog/chiken-500-tablet.webp 1x, img/catalog/chiken-500-tablet@2x.webp 2x"
+                    width="161" height="172">
+                    <source type="image/webp"
+                    srcset="img/catalog/chiken-500-mobile.webp 1x, img/catalog/chiken-500-mobile@2x.webp 2x"
+                    width="68" height="86">
+
+                  <source media="(min-width: 768px)" srcset="img/catalog/chiken-500-tablet.png 1x, img/catalog/chiken-500-tablet@2x.png 2x" width="161"
                     height="172">
                   <img src="img/catalog/chiken-500-mobile.png" width="68" height="86" alt="Кэт энерджи. Курица. 500 г."
                     srcset="img/catalog/chiken-500-mobile@2x.png 2x">
                 </picture>
-              </div>
-              <h3 class="product__title">Cat Energy PRO 500 г</h3>
+              </a>
+              <h3 class="product__title">
+                <a class="product__title-link" href="#">Cat Energy PRO 500 г</a>
+              </h3>
               <table class="product__description">
                 <tr class="product__description-row">
                   <td class="product__description-term">Масса</td>
@@ -85,8 +93,18 @@
 
           <li class="catalog__item product">
             <div class="product__container">
-              <div class="product__img">
+              <a href="#" class="product__img" title="Перейти на страницу товара">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/catalog/chiken-1000-desktop.webp 1x, img/catalog/chiken-1000-desktop@2x.webp 2x"
+                  width="172" height="196">
+                  <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog/chiken-1000-tablet.webp 1x, img/catalog/chiken-1000-tablet@2x.webp 2x"
+                  width="168" height="200">
+                  <source type="image/webp"
+                  srcset="img/catalog/chiken-1000-mobile.webp 1x, img/catalog/chiken-1000-mobile@2x.webp 2x"
+                  width="84" height="100">
+
                   <source media="(min-width: 1440px)"
                     srcset="img/catalog/chiken-1000-desktop.png 1x, img/catalog/chiken-1000-desktop@2x.png 2x"
                     width="172" height="196">
@@ -96,8 +114,10 @@
                   <img src="img/catalog/chiken-1000-mobile.png" width="84" height="100"
                     alt="Кэт энерджи. Курица. 1000 г." srcset="img/catalog/chiken-1000-mobile@2x.png 2x">
                 </picture>
-              </div>
-              <h3 class="product__title">Cat Energy PRO 1000 г</h3>
+              </a>
+              <h3 class="product__title">
+                <a class="product__title-link" href="#">Cat Energy PRO 1000 г</a>
+              </h3>
               <table class="product__description">
                 <tr class="product__description-row">
                   <td class="product__description-term">Масса</td>
@@ -118,16 +138,25 @@
 
           <li class="catalog__item product">
             <div class="product__container">
-              <div class="product__img">
+              <a href="#" class="product__img" title="Перейти на страницу товара">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog/fish-500-tablet.webp 1x, img/catalog/fish-500-tablet@2x.webp 2x" width="161"
+                  height="172">
+                  <source type="image/webp"
+                  srcset="img/catalog/fish-500-mobile.webp 1x, img/catalog/fish-500-mobile@2x.webp 2x" width="68"
+                  height="86">
+
                   <source media="(min-width: 768px)"
                     srcset="img/catalog/fish-500-tablet.png 1x, img/catalog/fish-500-tablet@2x.png 2x" width="161"
                     height="172">
                   <img src="img/catalog/fish-500-mobile.png" width="68" height="86" alt="Кэт энерджи. Рыба. 500 г."
                     srcset="img/catalog/fish-500-mobile@2x.png 2x">
                 </picture>
-              </div>
-              <h3 class="product__title">Cat Energy PRO 500 г</h3>
+              </a>
+              <h3 class="product__title">
+                <a class="product__title-link" href="#">Cat Energy PRO 500 г</a>
+              </h3>
               <table class="product__description">
                 <tr class="product__description-row">
                   <td class="product__description-term">Масса</td>
@@ -148,8 +177,18 @@
 
           <li class="catalog__item product">
             <div class="product__container">
-              <div class="product__img">
+              <a href="#" class="product__img" title="Перейти на страницу товара">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/catalog/fish-1000-desktop.webp 1x, img/catalog/fish-1000-desktop@2x.webp 2x" width="172"
+                  height="196">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/catalog/fish-1000-tablet.webp 1x, img/catalog/fish-1000-tablet@2x.webp 2x" width="168"
+                    height="200">
+                    <source type="image/webp"
+                    srcset="img/catalog/fish-1000-mobile.webp 1x, img/catalog/fish-1000-mobile@2x.webp 2x" width="84"
+                    height="100">
+
                   <source media="(min-width: 1440px)"
                     srcset="img/catalog/fish-1000-desktop.png 1x, img/catalog/fish-1000-desktop@2x.png 2x" width="172"
                     height="196">
@@ -159,8 +198,10 @@
                   <img src="img/catalog/fish-1000-mobile.png" width="84" height="100" alt="Кэт энерджи. Рыба. 1000 г."
                     srcset="img/catalog/fish-1000-mobile@2x.png 2x">
                 </picture>
-              </div>
-              <h3 class="product__title">Cat Energy PRO 1000 г</h3>
+              </a>
+              <h3 class="product__title">
+                <a class="product__title-link" href="#">Cat Energy PRO 1000 г</a>
+              </h3>
               <table class="product__description">
                 <tr class="product__description-row">
                   <td class="product__description-term">Масса</td>
@@ -181,7 +222,7 @@
 
           <li class="catalog__item product">
             <div class="product__container">
-              <div class="product__img">
+              <a href="#" class="product__img" title="Перейти на страницу товара">
                 <picture>
                   <source type="image/webp" media="(min-width: 768px)"
                     srcset="img/catalog/buckwheat-500-tablet.webp 1x, img/catalog/buckwheat-500-tablet@2x.webp 2x"
@@ -196,8 +237,10 @@
                   <img src="img/catalog/buckwheat-500-mobile.png" width="68" height="86"
                     alt="Кэт энерджи. Гречка. 500 г." srcset="img/catalog/buckwheat-500-mobile@2x.png 2x">
                 </picture>
-              </div>
-              <h3 class="product__title">Cat Energy Slim 500 г</h3>
+              </a>
+              <h3 class="product__title">
+                <a class="product__title-link" href="#">Cat Energy Slim 500 г</a>
+              </h3>
               <table class="product__description">
                 <tr class="product__description-row">
                   <td class="product__description-term">Масса</td>
@@ -218,8 +261,18 @@
 
           <li class="catalog__item product">
             <div class="product__container">
-              <div class="product__img">
+              <a href="#" class="product__img" title="Перейти на страницу товара">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/catalog/buckwheat-1000-desktop.webp 1x, img/catalog/buckwheat-1000-desktop@2x.webp 2x"
+                  width="172" height="196">
+                  <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog/buckwheat-1000-tablet.webp 1x, img/catalog/buckwheat-1000-tablet@2x.webp 2x"
+                  width="168" height="200">
+                  <source type="image/webp"
+                  srcset="img/catalog/buckwheat-1000-mobile.webp 1x, img/catalog/buckwheat-1000-mobile@2x.webp 2x"
+                  width="84" height="100">
+
                   <source media="(min-width: 1440px)"
                     srcset="img/catalog/buckwheat-1000-desktop.png 1x, img/catalog/buckwheat-1000-desktop@2x.png 2x"
                     width="172" height="196">
@@ -229,8 +282,10 @@
                   <img src="img/catalog/buckwheat-1000-mobile.png" width="84" height="100"
                     alt="Кэт энерджи. Гречка. 1000 г." srcset="img/catalog/buckwheat-1000-mobile@2x.png 2x">
                 </picture>
-              </div>
-              <h3 class="product__title">Cat Energy Slim 1000 г</h3>
+              </a>
+              <h3 class="product__title">
+                <a class="product__title-link" href="#">Cat Energy Slim 1000 г</a>
+              </h3>
               <table class="product__description">
                 <tr class="product__description-row">
                   <td class="product__description-term">Масса</td>
@@ -251,16 +306,25 @@
 
           <li class="catalog__item product">
             <div class="product__container">
-              <div class="product__img">
+              <a href="#" class="product__img" title="Перейти на страницу товара">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog/rice-500-tablet.webp 1x, img/catalog/rice-500-tablet@2x.webp 2x" width="161"
+                  height="172">
+                  <source type="image/webp"
+                  srcset="img/catalog/rice-500-mobile.webp 1x, img/catalog/rice-500-mobile@2x.webp 2x" width="68"
+                  height="86">
+
                   <source media="(min-width: 768px)"
                     srcset="img/catalog/rice-500-tablet.png 1x, img/catalog/rice-500-tablet@2x.png 2x" width="161"
                     height="172">
                   <img src="img/catalog/rice-500-mobile.png" width="68" height="86" alt="Кэт энерджи. Рис. 500 г."
                     srcset="img/catalog/rice-500-mobile@2x.png 2x">
                 </picture>
-              </div>
-              <h3 class="product__title">Cat Energy Slim 500 г</h3>
+              </a>
+              <h3 class="product__title">
+                <a class="product__title-link" href="#">Cat Energy Slim 500 г</a>
+              </h3>
               <table class="product__description">
                 <tr class="product__description-row">
                   <td class="product__description-term">Масса</td>
@@ -281,7 +345,9 @@
 
           <li class="catalog__item product product--more">
             <div class="product__plus"></div>
-            <h3 class="product__title">Показать еще 100500 товаров</h3>
+            <h3 class="product__title">
+              <a class="product__title-link" href="#">Показать еще 100500 товаров</a>
+            </h3>
             <p class="product__description">На самом деле вкусов гораздо больше!</p>
             <a class="button product__button button--secondary" href="#">Показать все</a>
           </li>
@@ -295,7 +361,7 @@
         <h2 class="add-catalog__title section-title">Дополнительные товары</h2>
       </div>
 
-      <div class="add-catalog-wrap">
+      <div class="add-catalog__wrap">
         <ul class="add-catalog__list">
           <li class="add-catalog__item additions">
             <h3 class="additions__title">Сахарозаменитель</h3>

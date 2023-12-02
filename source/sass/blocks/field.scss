@@ -121,9 +121,17 @@
   display: block;
 }
 
-.field__label:disabled {
-  opacity: 30%;
+.field__input-radio:disabled + .field__label--radio,
+.field__input-checkbox:disabled + .field__label--checkbox {
+  opacity: 0.3;
 }
+
+.field__input-radio:focus-visible + .field__label--radio,
+.field__input-checkbox:focus-visible + .field__label--checkbox {
+  outline-style: auto;
+  outline-offset: 2px;
+}
+
 
 .field__input {
   font-family: $accent-font;
@@ -137,6 +145,15 @@
   border: none;
   height: 45px;
   box-sizing: border-box;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
+
+  &[type="number"] {
+    -moz-appearance: textfield;
+  }
 
   &--comment {
     height: auto;

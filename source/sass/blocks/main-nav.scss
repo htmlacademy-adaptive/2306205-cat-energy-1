@@ -7,6 +7,20 @@
   }
 }
 
+@media (max-width: $tablet-width) {
+  .main-nav--no-js {
+    & .main-nav__toggle {
+      display: none;
+    }
+
+    & .main-nav__list {
+      position: static;
+      padding: 14px 0 0 0;
+      margin: 0 -20px;
+    }
+  }
+}
+
 .main-nav__toggle {
   position: absolute;
   display: flex;
